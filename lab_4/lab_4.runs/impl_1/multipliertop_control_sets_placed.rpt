@@ -1,0 +1,84 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Feb 20 17:19:29 2025
+| Host         : ECEB-3022-15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file multipliertop_control_sets_placed.rpt
+| Design       : multipliertop
+| Device       : xc7s50
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |           17 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              59 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |               Enable Signal               |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | control/E[0]                              | control/SR[0]                        |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | button_sync[0]/counter[0]_i_2__1_n_0      | button_sync[0]/counter[0]_i_1__0_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | button_sync[1]/sel                        | button_sync[1]/counter[0]_i_1_n_0    |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | control/FSM_onehot_curr_state_reg[0]_0    |                                      |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | control/FSM_onehot_curr_state[18]_i_1_n_0 | button_sync[1]/reset_load_clear_s    |                4 |             19 |         4.75 |
+|  clk_IBUF_BUFG |                                           |                                      |               17 |             34 |         2.00 |
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

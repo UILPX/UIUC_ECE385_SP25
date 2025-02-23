@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Feb 14 15:54:09 2025
+| Host         : ECEB-4072-05 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file adder_toplevel_bus_skew_routed.rpt -pb adder_toplevel_bus_skew_routed.pb -rpx adder_toplevel_bus_skew_routed.rpx
+| Design       : adder_toplevel
+| Device       : xa7s50-csga324
+| Speed File   : -1I  PRODUCTION 1.16 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
