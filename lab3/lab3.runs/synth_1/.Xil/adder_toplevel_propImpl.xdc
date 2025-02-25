@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc rfile:../../../lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc rfile:../../../lab3.srcs/constrs_1/imports/pin_assignment/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G1 [get_ports {sw_i[0]}]
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]

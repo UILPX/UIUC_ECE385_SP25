@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/lab_2/lab_2.runs/synth_1/adder_toplevel.tcl"
+  variable script "D:/School/UIUC_ECE385_SP25/lab3/lab3.runs/synth_1/adder_toplevel.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,28 +71,27 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xa7s50csga324-1I
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/lab_2/lab_2.cache/wt [current_project]
-set_property parent.project_path D:/lab_2/lab_2.xpr [current_project]
+set_property webtalk.parent_dir D:/School/UIUC_ECE385_SP25/lab3/lab3.cache/wt [current_project]
+set_property parent.project_path D:/School/UIUC_ECE385_SP25/lab3/lab3.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/lab_2/lab_2.cache/ip [current_project]
+set_property ip_output_repo d:/School/UIUC_ECE385_SP25/lab3/lab3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/load_reg.sv
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/negedge_detector.sv
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/sync_debounce.sv
-  D:/lab_2/lab_2.srcs/sources_1/imports/design_source/adder_toplevel.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/load_reg.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/negedge_detector.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/sync_debounce.sv
+  D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/adder_toplevel.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -103,12 +102,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc
-set_property used_in_implementation false [get_files D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc]
+read_xdc D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc
+set_property used_in_implementation false [get_files D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/lab_2/lab_2.srcs/utils_1/imports/synth_1/adder_toplevel.dcp
+read_checkpoint -auto_incremental -incremental D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

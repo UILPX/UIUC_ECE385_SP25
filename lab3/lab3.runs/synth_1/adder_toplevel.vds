@@ -2,17 +2,17 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Feb 14 15:52:47 2025
-# Process ID: 15484
-# Current directory: D:/lab_2/lab_2.runs/synth_1
+# Start of session at: Mon Feb 24 01:24:17 2025
+# Process ID: 8904
+# Current directory: D:/School/UIUC_ECE385_SP25/lab3/lab3.runs/synth_1
 # Command line: vivado.exe -log adder_toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_toplevel.tcl
-# Log file: D:/lab_2/lab_2.runs/synth_1/adder_toplevel.vds
-# Journal file: D:/lab_2/lab_2.runs/synth_1\vivado.jou
-# Running On: ECEB-4072-05, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 33554 MB
+# Log file: D:/School/UIUC_ECE385_SP25/lab3/lab3.runs/synth_1/adder_toplevel.vds
+# Journal file: D:/School/UIUC_ECE385_SP25/lab3/lab3.runs/synth_1\vivado.jou
+# Running On: Server, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 29953 MB
 #-----------------------------------------------------------
 source adder_toplevel.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental D:/lab_2/lab_2.srcs/utils_1/imports/synth_1/adder_toplevel.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from D:/lab_2/lab_2.srcs/utils_1/imports/synth_1/adder_toplevel.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/utils_1/imports/synth_1/adder_toplevel.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top adder_toplevel -part xa7s50csga324-1I
 Starting synth_design
@@ -23,89 +23,89 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18952
+INFO: [Synth 8-7075] Helper process launched with PID 15672
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-11121] redeclaration of ANSI port 'q' is not allowed [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/sync_debounce.sv:20]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'q' is not allowed [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/sync_debounce.sv:20]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1805.648 ; gain = 407.922
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1178.199 ; gain = 408.879
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'adder_toplevel' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/adder_toplevel.sv:8]
-INFO: [Synth 8-6157] synthesizing module 'negedge_detector' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'negedge_detector' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'load_reg' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/load_reg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'adder_toplevel' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/adder_toplevel.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'negedge_detector' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'negedge_detector' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'load_reg' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/load_reg.sv:1]
 	Parameter DATA_WIDTH bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'load_reg' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/load_reg.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'select_adder' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'fourbitscadder' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'CSfull_adder' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:37]
-INFO: [Synth 8-6155] done synthesizing module 'CSfull_adder' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:37]
-INFO: [Synth 8-6155] done synthesizing module 'fourbitscadder' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'select_adder' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/select_adder.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'hex_driver' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'sync_debounce' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'sync_debounce' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
-INFO: [Synth 8-6157] synthesizing module 'load_reg__parameterized0' [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/load_reg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'load_reg' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/load_reg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'select_adder' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'fourbitscadder' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CSfull_adder' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'CSfull_adder' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'fourbitscadder' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_adder' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/select_adder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sync_debounce' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'sync_debounce' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'load_reg__parameterized0' [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/load_reg.sv:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'load_reg__parameterized0' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/load_reg.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'adder_toplevel' (0#1) [D:/lab_2/lab_2.srcs/sources_1/imports/design_source/adder_toplevel.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'load_reg__parameterized0' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/load_reg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder_toplevel' (0#1) [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/sources_1/imports/design_source/adder_toplevel.sv:8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1896.359 ; gain = 498.633
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.086 ; gain = 499.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1896.359 ; gain = 498.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.086 ; gain = 499.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1896.359 ; gain = 498.633
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.086 ; gain = 499.766
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1896.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1269.086 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc]
-Finished Parsing XDC File [D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/lab_2/lab_2.srcs/constrs_1/imports/pin_assignment/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/adder_toplevel_propImpl.xdc].
+Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc]
+Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/School/UIUC_ECE385_SP25/lab3/lab3.srcs/constrs_1/imports/pin_assignment/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/adder_toplevel_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/adder_toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1988.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1988.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.809 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xa7s50csga324-1I
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -140,25 +140,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design adder_toplevel has port hex_seg_a[7] driven by constant 1
 WARNING: [Synth 8-3917] design adder_toplevel has port hex_seg_b[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -176,37 +176,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -235,18 +235,18 @@ Report Cell Usage:
 |11    |OBUF   |    25|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1988.398 ; gain = 498.633
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1988.398 ; gain = 590.672
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1325.809 ; gain = 499.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1325.809 ; gain = 556.488
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1988.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1325.809 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1988.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -254,7 +254,7 @@ Synth Design complete, checksum: 928de327
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1988.398 ; gain = 965.336
-INFO: [Common 17-1381] The checkpoint 'D:/lab_2/lab_2.runs/synth_1/adder_toplevel.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1325.809 ; gain = 928.773
+INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab3/lab3.runs/synth_1/adder_toplevel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file adder_toplevel_utilization_synth.rpt -pb adder_toplevel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 14 15:53:22 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 01:24:47 2025...
