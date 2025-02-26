@@ -1,13 +1,13 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Mon Feb 24 20:58:06 2025
+// Date        : Tue Feb 25 21:13:25 2025
 // Host        : Server running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/School/UIUC_ECE385_SP25/lab5/lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
 // Design      : blk_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xa7s50csga324-1I
+// Device      : xc7s50csga324-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

@@ -78,7 +78,7 @@ output wire [15 : 0] douta;
 
   blk_mem_gen_v8_4_5 #(
     .C_FAMILY("spartan7"),
-    .C_XDEVICEFAMILY("aspartan7"),
+    .C_XDEVICEFAMILY("spartan7"),
     .C_ELABORATION_DIR("./"),
     .C_INTERFACE_TYPE(0),
     .C_AXI_TYPE(1),

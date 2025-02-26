@@ -70,8 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xa7s50csga324-1I
+create_project -in_memory -part xc7s50csga324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -89,6 +90,7 @@ OPTRACE "Adding files" START { }
 read_verilog D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv
 set_property file_type "Verilog Header" [get_files D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv]
 read_verilog -library xil_defaultlib -sv {
+  D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu_to_io.sv
@@ -100,7 +102,7 @@ read_verilog -library xil_defaultlib -sv {
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/sync.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv
 }
-read_ip -quiet d:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all d:/School/UIUC_ECE385_SP25/lab5/lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -116,10 +118,12 @@ read_xdc D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignm
 set_property used_in_implementation false [get_files D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/utils_1/imports/synth_1/processor_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top processor_top -part xa7s50csga324-1I
+synth_design -top processor_top -part xc7s50csga324-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
