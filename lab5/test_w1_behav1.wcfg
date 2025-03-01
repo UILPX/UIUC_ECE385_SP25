@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_w1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SLC3_TYPES" />
+            <top_module name="\$unit_ALU_sv_3285502165 " />
+            <top_module name="glbl" />
+            <top_module name="test_w1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,290.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,149.783 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="184"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/test_w1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/run_i" type="logic">
+      <obj_property name="ElementShortName">run_i</obj_property>
+      <obj_property name="ObjectShortName">run_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/continue_i" type="logic">
+      <obj_property name="ElementShortName">continue_i</obj_property>
+      <obj_property name="ObjectShortName">continue_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/hex_seg_left" type="array">
+      <obj_property name="ElementShortName">hex_seg_left[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_seg_left[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/hex_grid_left" type="array">
+      <obj_property name="ElementShortName">hex_grid_left[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_grid_left[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/led_o" type="array">
+      <obj_property name="ElementShortName">led_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/sw_i" type="array">
+      <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/testbus" type="array">
+      <obj_property name="ElementShortName">testbus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">testbus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/pc" type="array">
+      <obj_property name="ElementShortName">pc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/SEXT5" type="array">
+      <obj_property name="ElementShortName">SEXT5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SEXT5[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/mar" type="array">
+      <obj_property name="ElementShortName">mar[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mar[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/mdr" type="array">
+      <obj_property name="ElementShortName">mdr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mdr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/gate_alu" type="logic">
+      <obj_property name="ElementShortName">gate_alu</obj_property>
+      <obj_property name="ObjectShortName">gate_alu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/gate_marmux" type="logic">
+      <obj_property name="ElementShortName">gate_marmux</obj_property>
+      <obj_property name="ObjectShortName">gate_marmux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/gate_mdr" type="logic">
+      <obj_property name="ElementShortName">gate_mdr</obj_property>
+      <obj_property name="ObjectShortName">gate_mdr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/gate_pc" type="logic">
+      <obj_property name="ElementShortName">gate_pc</obj_property>
+      <obj_property name="ObjectShortName">gate_pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/ld_reg" type="logic">
+      <obj_property name="ElementShortName">ld_reg</obj_property>
+      <obj_property name="ObjectShortName">ld_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/ld_pc" type="logic">
+      <obj_property name="ElementShortName">ld_pc</obj_property>
+      <obj_property name="ObjectShortName">ld_pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/sr1_o" type="array">
+      <obj_property name="ElementShortName">sr1_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr1_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/sr2_o" type="array">
+      <obj_property name="ElementShortName">sr2_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sr2_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/cpu/cc" type="array">
+      <obj_property name="ElementShortName">cc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cc[2:0]</obj_property>
+   </wvobject>
+</wave_config>
