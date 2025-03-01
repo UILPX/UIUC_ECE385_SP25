@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Feb 25 23:47:02 2025
-# Process ID: 17536
+# Start of session at: Sat Mar  1 17:10:08 2025
+# Process ID: 18444
 # Current directory: D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1
 # Command line: vivado.exe -log processor_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_top.tcl
 # Log file: D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/processor_top.vds
@@ -23,15 +23,15 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2132
+INFO: [Synth 8-7075] Helper process launched with PID 16388
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-11067] parameter 'NO_OP' declared inside package 'SLC3_TYPES' shall be treated as localparam [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv:58]
 WARNING: [Synth 8-11067] parameter 'outHEX' declared inside package 'SLC3_TYPES' shall be treated as localparam [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv:88]
 WARNING: [Synth 8-11067] parameter 'inSW' declared inside package 'SLC3_TYPES' shall be treated as localparam [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv:89]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1187.062 ; gain = 410.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1187.980 ; gain = 409.609
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'processor_top' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'processor_top' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv:6]
 INFO: [Synth 8-6157] synthesizing module 'sync_debounce' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/sync.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'sync_debounce' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/sync.sv:9]
 INFO: [Synth 8-6157] synthesizing module 'sync_flop' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/sync.sv:39]
@@ -39,19 +39,32 @@ INFO: [Synth 8-6155] done synthesizing module 'sync_flop' (0#1) [D:/School/UIUC_
 INFO: [Synth 8-6157] synthesizing module 'slc3' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/slc3.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'control' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:26]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:125]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:265]
 INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/SEXT.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/SEXT.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/regfile.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'load_reg' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'load_reg' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/regfile.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'load_reg__parameterized0' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'load_reg__parameterized0' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'load_reg__parameterized1' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'load_reg__parameterized1' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'bus_mux' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'bus_mux' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'MUX_2' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'MUX_2' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'MUX_4' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:38]
 INFO: [Synth 8-6155] done synthesizing module 'MUX_4' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:38]
-WARNING: [Synth 8-7071] port 'd' of module 'MUX_4' is unconnected for instance 'programcounter_mux' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:137]
-WARNING: [Synth 8-7023] instance 'programcounter_mux' of module 'MUX_4' has 6 connections declared, but only 5 given [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:137]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2__parameterized0' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:23]
+	Parameter w bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2__parameterized0' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/ALU.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'cpu_to_io' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu_to_io.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'hex_driver' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/hex_driver.sv:1]
@@ -70,23 +83,15 @@ INFO: [Synth 8-6157] synthesizing module 'memory' [D:/School/UIUC_ECE385_SP25/la
 INFO: [Synth 8-6157] synthesizing module 'instantiate_ram' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/instantiate_ram.sv:18]
 INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv:218]
 INFO: [Synth 8-6155] done synthesizing module 'instantiate_ram' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/instantiate_ram.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/.Xil/Vivado-17536-Server/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/.Xil/Vivado-17536-Server/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/.Xil/Vivado-18444-Server/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/.Xil/Vivado-18444-Server/realtime/blk_mem_gen_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'memory' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/memory.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'processor_top' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv:3]
-WARNING: [Synth 8-87] always_comb on 'mem_mem_ena_reg' did not result in combinational logic [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:103]
-WARNING: [Synth 8-3848] Net mem_wr_ena in module/entity control does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:50]
-WARNING: [Synth 8-3848] Net ben in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:62]
-WARNING: [Synth 8-3848] Net gate_alu in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:51]
-WARNING: [Synth 8-3848] Net gate_marmux in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:50]
-WARNING: [Synth 8-3848] Net adderout in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:61]
-WARNING: [Synth 8-3848] Net alu in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:60]
-WARNING: [Synth 8-3848] Net mio_enmux in module/entity cpu does not have driver. [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv:54]
-WARNING: [Synth 8-7129] Port mem_wr_ena in module control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ir[15] in module control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ir[14] in module control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ir[13] in module control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ir[12] in module control is either unconnected or has no load
+INFO: [Synth 8-6155] done synthesizing module 'processor_top' (0#1) [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv:6]
+WARNING: [Synth 8-7129] Port ir[15] in module SEXT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[14] in module SEXT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[13] in module SEXT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[12] in module SEXT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ir[11] in module SEXT is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[11] in module control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[10] in module control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[9] in module control is either unconnected or has no load
@@ -99,20 +104,19 @@ WARNING: [Synth 8-7129] Port ir[3] in module control is either unconnected or ha
 WARNING: [Synth 8-7129] Port ir[2] in module control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[1] in module control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[0] in module control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ben in module control is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.211 ; gain = 505.191
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.707 ; gain = 506.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.211 ; gain = 505.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.707 ; gain = 506.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.211 ; gain = 505.191
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.707 ; gain = 506.336
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1282.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1284.707 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -123,74 +127,99 @@ Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pi
 Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/processor_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/processor_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1379.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1345.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1379.301 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1345.125 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem_subsystem/sram0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for mem_subsystem/sram0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  halted |                              000 |                            00000
-                    s_18 |                              001 |                            00011
-                  s_33_1 |                              010 |                            00100
-                  s_33_2 |                              011 |                            00101
-                  s_33_3 |                              100 |                            00110
-                    s_35 |                              101 |                            00111
-               pause_ir1 |                              110 |                            00001
-               pause_ir2 |                              111 |                            00010
+                  halted |                            00000 |                            00000
+                    s_18 |                            00001 |                            00011
+                  s_33_1 |                            00010 |                            00100
+                  s_33_2 |                            00011 |                            00101
+                  s_33_3 |                            00100 |                            00110
+                    s_35 |                            00101 |                            00111
+                    s_32 |                            00110 |                            01000
+                     s_1 |                            00111 |                            01001
+                     s_5 |                            01000 |                            01010
+                     s_9 |                            01001 |                            01011
+                     s_6 |                            01010 |                            01100
+                  s_25_1 |                            01011 |                            01101
+                  s_25_2 |                            01100 |                            01110
+                  s_25_3 |                            01101 |                            01111
+                    s_27 |                            01110 |                            10000
+                     s_7 |                            01111 |                            10001
+                    s_23 |                            10000 |                            10010
+                  s_16_1 |                            10001 |                            10011
+                  s_16_2 |                            10010 |                            10100
+                  s_16_3 |                            10011 |                            10101
+                     s_0 |                            10100 |                            10110
+                    s_22 |                            10101 |                            10111
+                    s_12 |                            10110 |                            11000
+                     s_4 |                            10111 |                            11001
+                    s_21 |                            11000 |                            11010
+                 pause_1 |                            11001 |                            00001
+                 pause_2 |                            11010 |                            00010
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
-WARNING: [Synth 8-327] inferring latch for variable 'mem_mem_ena_reg' [D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv:103]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   16 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 3     
 +---Registers : 
-	               16 Bit    Registers := 5     
-	                1 Bit    Registers := 42    
+	               16 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 43    
 +---Muxes : 
-	   2 Input   16 Bit        Muxes := 4     
-	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 10    
+	   4 Input   16 Bit        Muxes := 3     
 	 176 Input   16 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
+	  27 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
 	   5 Input    4 Bit        Muxes := 2     
-	   8 Input    3 Bit        Muxes := 1     
-	   6 Input    1 Bit        Muxes := 4     
-	   8 Input    1 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	  20 Input    2 Bit        Muxes := 3     
+	  20 Input    1 Bit        Muxes := 16    
+	  27 Input    1 Bit        Muxes := 1     
 	   2 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -210,9 +239,8 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-3917] design processor_top has port hex_seg_left[7] driven by constant 1
 WARNING: [Synth 8-3917] design processor_top has port hex_seg_right[7] driven by constant 1
-WARNING: [Synth 8-3332] Sequential element (slc3/cpu/cpu_control/mem_mem_ena_reg) is unused and will be removed from module processor_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -232,20 +260,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1347.027 ; gain = 568.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1364.586 ; gain = 586.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance mem_subsystem/init_ram/address_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -263,37 +291,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -312,40 +340,40 @@ Report Cell Usage:
 +------+------------+------+
 |1     |blk_mem_gen |     1|
 |2     |BUFG        |     1|
-|3     |CARRY4      |    27|
-|4     |LUT1        |     9|
-|5     |LUT2        |    12|
-|6     |LUT3        |    17|
-|7     |LUT4        |    29|
-|8     |LUT5        |    27|
-|9     |LUT6        |    29|
+|3     |CARRY4      |    35|
+|4     |LUT1        |     8|
+|5     |LUT2        |    31|
+|6     |LUT3        |    43|
+|7     |LUT4        |    71|
+|8     |LUT5        |   117|
+|9     |LUT6        |   125|
 |10    |RAMB18E1    |     1|
-|11    |FDRE        |   157|
+|11    |FDRE        |   275|
 |12    |FDSE        |     1|
-|13    |IBUF        |     4|
+|13    |IBUF        |    20|
 |14    |OBUF        |    40|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1379.305 ; gain = 505.191
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.305 ; gain = 602.285
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1365.648 ; gain = 524.957
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1365.648 ; gain = 587.277
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1379.305 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1377.500 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1379.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.207 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 8167a9af
+Synth Design complete, checksum: 2a0b3bc3
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+78 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1379.305 ; gain = 975.961
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1381.207 ; gain = 976.652
 INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/processor_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file processor_top_utilization_synth.rpt -pb processor_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 25 23:47:32 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  1 17:10:45 2025...

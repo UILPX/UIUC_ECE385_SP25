@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Feb 25 23:52:10 2025
+| Date         : Sat Mar  1 17:11:17 2025
 | Host         : Server running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file processor_top_control_sets_placed.rpt
 | Design       : processor_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     8 |
-|    Minimum number of control sets                        |     8 |
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    11 |
+| Unused register locations in slices containing registers |    14 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     8 |
+| Total control sets |    16 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     0 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     1 |
+| >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     7 |
+| >= 16              |    15 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               9 |            3 |
+| No           | No                    | No                     |              41 |           15 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              20 |            7 |
+| No           | Yes                   | No                     |              22 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             112 |           30 |
+| Yes          | Yes                   | No                     |             219 |           92 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,14 +73,22 @@ Table of Contents
 +----------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
 |  Clock Signal  |                     Enable Signal                     |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG |                                                       |                                      |                3 |              9 |         3.00 |
-|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[1]_0[0] | button_sync[0]/hex_seg_left_OBUF[0]  |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG | slc3/cpu/cpu_control/E[0]                             | button_sync[0]/hex_seg_left_OBUF[0]  |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state[4]_i_1_n_0  | button_sync[0]/hex_seg_left_OBUF[0]  |                4 |              5 |         1.25 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[1]_4[0] | button_sync[0]/hex_seg_left_OBUF[0]  |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[2]_0[0] | button_sync[0]/hex_seg_left_OBUF[0]  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[1]_3[0] | button_sync[0]/hex_seg_left_OBUF[0]  |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/E[0]                             | button_sync[0]/hex_seg_left_OBUF[0]  |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | slc3/cpu/ir_reg/reg_ld[3]                             | button_sync[0]/hex_seg_left_OBUF[0]  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | slc3/cpu/ir_reg/reg_ld[0]                             | button_sync[0]/hex_seg_left_OBUF[0]  |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | slc3/cpu/ir_reg/reg_ld[1]                             | button_sync[0]/hex_seg_left_OBUF[0]  |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | slc3/cpu/ir_reg/reg_ld[2]                             | button_sync[0]/hex_seg_left_OBUF[0]  |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | mem_subsystem/init_ram/sel                            | button_sync[0]/hex_seg_left_OBUF[0]  |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | button_sync[2]/sel                                    | button_sync[2]/counter[0]_i_1_n_0    |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG | button_sync[0]/counter[0]_i_2__2_n_0                  | button_sync[0]/counter[0]_i_1__1_n_0 |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG | button_sync[1]/counter[0]_i_2__1_n_0                  | button_sync[1]/counter[0]_i_1__0_n_0 |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG | button_sync[2]/sel                                    | button_sync[2]/counter[0]_i_1_n_0    |                4 |             16 |         4.00 |
-|  clk_IBUF_BUFG |                                                       | button_sync[0]/hex_seg_left_OBUF[0]  |                7 |             20 |         2.86 |
-|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[1]_1[0] | button_sync[0]/hex_seg_left_OBUF[0]  |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG |                                                       | button_sync[0]/hex_seg_left_OBUF[0]  |               10 |             22 |         2.20 |
+|  clk_IBUF_BUFG | slc3/cpu/cpu_control/FSM_sequential_state_reg[3]_1[0] | button_sync[0]/hex_seg_left_OBUF[0]  |               12 |             22 |         1.83 |
+|  clk_IBUF_BUFG |                                                       |                                      |               15 |             41 |         2.73 |
 +----------------+-------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
 
 

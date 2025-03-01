@@ -30,8 +30,8 @@
 // TO USE: Include this file in your project, and paste the following 2 lines
 //   (uncommented) into whatever file needs to reference the functions &
 //   constants included in this file, just after the usual library references:
-// `include "types.sv"
-// import SLC3_TYPES::*;
+`include "types.sv"
+import SLC3_TYPES::*;
 
 `ifndef _SLC3_TYPES__SV 
 `define _SLC3_TYPES__SV

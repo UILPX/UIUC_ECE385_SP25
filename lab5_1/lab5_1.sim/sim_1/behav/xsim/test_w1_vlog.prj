@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../lab5_1.srcs/sources_1/imports/srcs" \
+"../../../../lab5_1.srcs/sources_1/new/MUX.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/control.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/cpu.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/cpu_to_io.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/hex_driver.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/instantiate_ram.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/load_reg.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/memory.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/processor_top.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/slc3.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/sync.sv" \
+"../../../../lab5_1.srcs/sources_1/imports/srcs/test_memory.sv" \
+"../../../../lab5_1.srcs/sim_1/new/test_w1.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -70,7 +70,13 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12608-Server/incrSyn
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -90,7 +96,9 @@ OPTRACE "Adding files" START { }
 read_verilog D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv
 set_property file_type "Verilog Header" [get_files D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/types.sv]
 read_verilog -library xil_defaultlib -sv {
+  D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/ALU.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/MUX.sv
+  D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/SEXT.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/control.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/cpu_to_io.sv
@@ -98,6 +106,7 @@ read_verilog -library xil_defaultlib -sv {
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/instantiate_ram.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/load_reg.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/memory.sv
+  D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/new/regfile.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/slc3.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/sync.sv
   D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sources_1/imports/srcs/processor_top.sv
@@ -117,6 +126,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignment/top.xdc
 set_property used_in_implementation false [get_files D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/utils_1/imports/synth_1/processor_top.dcp
