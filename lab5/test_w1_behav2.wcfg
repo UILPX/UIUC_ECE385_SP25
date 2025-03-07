@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="30,161.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="30,539.201 ns"></ZoomEndTime>
-      <Cursor1Time time="30,339.000 ns"></Cursor1Time>
+      <ZoomStartTime time="29,187.955 ns"></ZoomStartTime>
+      <ZoomEndTime time="31,395.956 ns"></ZoomEndTime>
+      <Cursor1Time time="30,665.955 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="26" />
+   <WVObjectSize size="27" />
    <wvobject fp_name="/test_w1/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -45,6 +45,10 @@
    <wvobject fp_name="/test_w1/test/slc3/cpu/mdr" type="array">
       <obj_property name="ElementShortName">mdr[15:0]</obj_property>
       <obj_property name="ObjectShortName">mdr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_w1/test/slc3/io_bridge/sram_wr_ena" type="logic">
+      <obj_property name="ElementShortName">sram_wr_ena</obj_property>
+      <obj_property name="ObjectShortName">sram_wr_ena</obj_property>
    </wvobject>
    <wvobject fp_name="/test_w1/test/slc3/cpu/pc" type="array">
       <obj_property name="ElementShortName">pc[15:0]</obj_property>
