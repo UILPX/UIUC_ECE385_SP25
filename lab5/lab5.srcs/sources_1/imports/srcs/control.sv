@@ -204,6 +204,7 @@ module control (
 		        begin
 		            ld_reg = 1'b1;
 		            gate_mdr = 1'b1;
+		            ld_cc = 1'b1;
 		        end
 		    s_7:
 		        begin
