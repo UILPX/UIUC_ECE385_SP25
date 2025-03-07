@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat Mar  1 17:10:08 2025
-# Process ID: 18444
+# Start of session at: Thu Mar  6 17:23:05 2025
+# Process ID: 5080
 # Current directory: D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1
 # Command line: vivado.exe -log processor_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_top.tcl
 # Log file: D:/School/UIUC_ECE385_SP25/lab5/lab5.runs/synth_1/processor_top.vds

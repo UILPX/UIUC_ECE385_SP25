@@ -39,70 +39,38 @@ always begin #1 clk = ~clk; end
 assign testbus = test.slc3.cpu.bus;
 
 initial begin
-reset = 1;
+reset = 0;
 run_i = 0;
 continue_i = 0;
 sw_i = 16'h0000;
-
+#5;
+reset = 1;
+run_i = 0;
+continue_i = 0;
+sw_i = 16'h005a;
 #10 reset = 0;
-sw_i = 16'h0003;
+
 #10 run_i = 1;
 #10 run_i = 0;
+#200
+
+sw_i = 16'h0002;
 #10 continue_i = 1;
 #10continue_i = 0;
-#50
+#30000
+#10 sw_i = 16'h0003;
 #10 continue_i = 1;
 #10continue_i = 0;
-#50
+#200
 #10 continue_i = 1;
 #10continue_i = 0;
-#50
-#10 continue_i = 1;
+#200#10 continue_i = 1;
 #10continue_i = 0;
-#50
-#10 continue_i = 1;
+#200#10 continue_i = 1;
 #10continue_i = 0;
-#50
-#10 continue_i = 1;
+#200#10 continue_i = 1;
 #10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-sw_i = 16'h2345;
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
-#10 continue_i = 1;
-#10continue_i = 0;
-#50
+#200
 
 $finish;
     end

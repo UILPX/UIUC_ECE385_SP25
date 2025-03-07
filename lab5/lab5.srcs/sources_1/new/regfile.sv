@@ -12,14 +12,14 @@ module regfile (
 );
 
     // 8 registers 
-    logic [15:0] reg_data [7:0];
+    logic [15:0] reg_data [8];
 
     // Individual register load signals
     logic [7:0] reg_ld;
 
 
     always_comb begin
-        reg_ld = 8'b00000000;
+        reg_ld = 8'h00;
         if (ld_reg) begin
             reg_ld[dr_s] = 1'b1; 
         end

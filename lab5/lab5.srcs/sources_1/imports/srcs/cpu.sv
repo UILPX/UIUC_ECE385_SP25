@@ -60,6 +60,7 @@ logic [1:0] aluk;
 logic       addr1mux;
 logic [1:0] addr2mux;
 logic       sr1mux;
+logic       drmux;
 
 //register output signal
 logic [15:0] mar; 
@@ -69,6 +70,7 @@ logic [15:0] pc;
 logic [15:0] alu;
 logic [15:0] adderout;
 logic ben;
+
 
 //sign extened logic
 logic [15:0] SEXT5, SEXT6, SEXT9, SEXT11;
@@ -80,7 +82,7 @@ logic [2:0] sr1_s, dr_s;
 
 //condition code
 logic [2:0] nzp,cc;
-logic       BEN;
+
 
 //ram connection
 assign mem_addr = mar;
@@ -104,7 +106,7 @@ regfile REGfile (
 );
 
 assign led_o = ir;
-assign hex_display_debug = ir;
+//assign hex_display_debug = ir;<-------------------------------------------------------------------display
 //------------------register------------------
 load_reg #(.DATA_WIDTH(16)) ir_reg (
     .clk    (clk),
@@ -156,15 +158,6 @@ load_reg #(.DATA_WIDTH(3)) conditioncode_reg(
     .data_q(cc)
 );
 
-load_reg #(.DATA_WIDTH(1)) ben_reg(
-    .clk(clk),
-    .reset(reset),
-    
-    .load(ld_ben),
-    .data_i(BEN),
-
-    .data_q(ben)
-);
 //----------------------MUX------------------------
 bus_mux busmux (
     .s({gate_marmux,gate_pc,gate_alu,gate_mdr}),
@@ -207,7 +200,7 @@ MUX_4 ADDR2_mux (
     .out(adder2_mux)
     );
 MUX_2 #(3) DR_mux(
-    .s(ir[11]),
+    .s(drmux),
     .a(ir[11:9]),
     .b(3'b111),
     .out(dr_s)
@@ -250,7 +243,7 @@ else if (bus[15]==1'b1)
 else
     nzp = 3'b001;
 //logic ben
-    BEN = (ir[11] & cc[2]) | (ir[10] & cc[1]) | (ir[9] & cc[0]);
+    ben = (ir[11] & cc[2]) | (ir[10] & cc[1]) | (ir[9] & cc[0]);
 end
 
 endmodule

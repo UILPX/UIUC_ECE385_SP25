@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../lab5.srcs/sources_1/imports/srcs" \
+"test_w1_func_synth.v" \
+
+sv xil_defaultlib  --include "../../../../../lab5.srcs/sources_1/imports/srcs" \
+"../../../../../lab5.srcs/sim_1/new/test_w1.sv" \
+
+# Do not sort compile order
+nosort

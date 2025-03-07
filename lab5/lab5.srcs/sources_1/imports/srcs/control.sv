@@ -53,6 +53,7 @@ module control (
 	output logic        addr1mux,
 	output logic [1:0]  addr2mux,
 	output logic        sr1mux,
+	output logic        drmux,
 
 	
 	//You should add additional control signals according to the SLC-3 datapath design
@@ -127,6 +128,7 @@ module control (
 		addr1mux = 1'b0;
 		addr2mux = 2'b00;
 		sr1mux = 1'b0;
+		drmux = 1'b0;
 
 		
 		mem_mem_ena = 1'b0;
@@ -219,6 +221,7 @@ module control (
 		        end
 		    s_16_1, s_16_2, s_16_3:
 		        begin
+		            mem_mem_ena = 1'b1;
 		            mem_wr_ena = 1'b1;
 		        end
 		    s_0:;
@@ -241,6 +244,7 @@ module control (
 		        begin
 		            gate_pc = 1'b1;
 		            ld_reg = 1'b1;
+		            drmux = 1'b1;
 		        end
 		    s_21:
 		        begin
@@ -288,28 +292,28 @@ module control (
 			    4'b0100: state_nxt = s_4;
 			    default: state_nxt = pause_1;
 			    endcase
-			s_1: state_nxt = pause_1;
-			s_5: state_nxt = pause_1;
-			s_9: state_nxt = pause_1;
+			s_1: state_nxt = s_18;
+			s_5: state_nxt = s_18;
+			s_9: state_nxt = s_18;
 			s_6: state_nxt = s_25_1;
 			s_25_1: state_nxt = s_25_2;
 			s_25_2: state_nxt = s_25_3;
 			s_25_3: state_nxt = s_27;
-			s_27: state_nxt = pause_1;
+			s_27: state_nxt = s_18;
 			s_7: state_nxt = s_23;
 			s_23: state_nxt = s_16_1;
 			s_16_1: state_nxt = s_16_2;
 			s_16_2: state_nxt = s_16_3;
-			s_16_3: state_nxt = pause_1;
+			s_16_3: state_nxt = s_18;
 			s_0: 
 			if(ben)
 			    state_nxt = s_22;
 			else
-			    state_nxt = pause_1;
-			s_22: state_nxt = pause_1;
-			s_12: state_nxt = pause_1;
+			    state_nxt = s_18;
+			s_22: state_nxt = s_18;
+			s_12: state_nxt = s_18;
 			s_4: state_nxt = s_21;
-			s_21: state_nxt = pause_1;
+			s_21: state_nxt = s_18;
 
 
 			pause_1:

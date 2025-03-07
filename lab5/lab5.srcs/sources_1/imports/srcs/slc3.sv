@@ -50,6 +50,7 @@ module slc3 (
 	logic cpu_mem_ena;
 	logic cpu_wr_ena;
 
+assign hex_display_debug = sw_i;//<----------------------------------------------display
 
 	cpu cpu (
 		.clk				(clk),
