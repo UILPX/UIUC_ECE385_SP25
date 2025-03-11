@@ -1,0 +1,1034 @@
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened new HwDB with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2025-03-10.22:44:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top"
+		}]
+}
+TRACE::2025-03-10.22:44:51::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-03-10.22:44:51::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2025-03-10.22:44:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top"
+		}]
+}
+TRACE::2025-03-10.22:44:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top"
+		}]
+}
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:51::SCWDomain::checking for install qemu data   : 
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:51::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-03-10.22:44:51::SCWMssOS::No sw design opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::mss does not exists at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::Creating sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::Adding the swdes entry, created swdb D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::updating the scw layer changes to swdes at   D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::Writing mss at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:51::SCWMssOS::Completed writing the mss file at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-03-10.22:44:51::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-03-10.22:44:51::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-03-10.22:44:51::SCWMssOS::Completed writing the mss file at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-03-10.22:44:51::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2025-03-10.22:44:55::SCWMssOS::Writing the mss file completed D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-03-10.22:44:55::SCWPlatform::Started generating the artifacts platform mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-03-10.22:44:55::SCWPlatform::Started generating the artifacts for system configuration mb_intro_top
+LOG::2025-03-10.22:44:55::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2025-03-10.22:44:55::SCWSystem::Not a boot domain 
+LOG::2025-03-10.22:44:55::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2025-03-10.22:44:55::SCWDomain::Generating domain artifcats
+TRACE::2025-03-10.22:44:55::SCWMssOS::Generating standalone artifcats
+TRACE::2025-03-10.22:44:55::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writing the mss file at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-03-10.22:44:55::SCWMssOS::Mss edits present, copying mssfile into export location D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-03-10.22:44:55::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-03-10.22:44:55::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2025-03-10.22:44:55::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-03-10.22:44:55::SCWMssOS::Copying to export directory.
+TRACE::2025-03-10.22:44:55::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-03-10.22:44:55::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-03-10.22:44:55::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2025-03-10.22:44:55::SCWSystem::Completed Processing the sysconfig mb_intro_top
+LOG::2025-03-10.22:44:55::SCWPlatform::Completed generating the artifacts for system configuration mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started preparing the platform 
+TRACE::2025-03-10.22:44:55::SCWSystem::Writing the bif file for system config mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWSystem::dir created 
+TRACE::2025-03-10.22:44:55::SCWSystem::Writing the bif 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started writing the spfm file 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Completed generating the platform
+TRACE::2025-03-10.22:44:55::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-03-10.22:44:55::SCWPlatform::updated the xpfm file.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-03-10.22:44:55::SCWPlatform::Started generating the artifacts platform mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-03-10.22:44:55::SCWPlatform::Started generating the artifacts for system configuration mb_intro_top
+LOG::2025-03-10.22:44:55::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2025-03-10.22:44:55::SCWDomain::Generating domain artifcats
+TRACE::2025-03-10.22:44:55::SCWMssOS::Generating standalone artifcats
+TRACE::2025-03-10.22:44:55::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writing the mss file at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-03-10.22:44:55::SCWMssOS::Mss edits present, copying mssfile into export location D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-03-10.22:44:55::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-03-10.22:44:55::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2025-03-10.22:44:55::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-03-10.22:44:55::SCWMssOS::Copying to export directory.
+TRACE::2025-03-10.22:44:55::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-03-10.22:44:55::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-03-10.22:44:55::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2025-03-10.22:44:55::SCWSystem::Completed Processing the sysconfig mb_intro_top
+LOG::2025-03-10.22:44:55::SCWPlatform::Completed generating the artifacts for system configuration mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started preparing the platform 
+TRACE::2025-03-10.22:44:55::SCWSystem::Writing the bif file for system config mb_intro_top
+TRACE::2025-03-10.22:44:55::SCWSystem::dir created 
+TRACE::2025-03-10.22:44:55::SCWSystem::Writing the bif 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started writing the spfm file 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-03-10.22:44:55::SCWPlatform::Completed generating the platform
+TRACE::2025-03-10.22:44:55::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-03-10.22:44:55::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:44:55::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:44:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:44:55::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:44:55::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:44:55::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-03-10.22:44:55::SCWPlatform::updated the xpfm file.
+LOG::2025-03-10.22:45:52::SCWPlatform::Started generating the artifacts platform mb_intro_top
+TRACE::2025-03-10.22:45:52::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-03-10.22:45:52::SCWPlatform::Started generating the artifacts for system configuration mb_intro_top
+LOG::2025-03-10.22:45:52::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2025-03-10.22:45:52::SCWSystem::Not a boot domain 
+LOG::2025-03-10.22:45:52::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2025-03-10.22:45:52::SCWDomain::Generating domain artifcats
+TRACE::2025-03-10.22:45:52::SCWMssOS::Generating standalone artifcats
+TRACE::2025-03-10.22:45:52::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-03-10.22:45:52::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:52::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:52::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:52::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:45:52::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:45:52::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:45:52::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:45:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:45:52::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:52::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:52::SCWMssOS::Completed writing the mss file at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2025-03-10.22:45:52::SCWMssOS::Mss edits present, copying mssfile into export location D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:52::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-03-10.22:45:52::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-03-10.22:45:52::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2025-03-10.22:45:52::SCWMssOS::doing bsp build ... 
+TRACE::2025-03-10.22:45:52::SCWMssOS::System Command Ran  D: & cd  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2025-03-10.22:45:52::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-10.22:45:52::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2025-03-10.22:45:52::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-10.22:45:52::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2025-03-10.22:45:52::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-10.22:45:52::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+TRACE::2025-03-10.22:45:52::SCWMssOS::MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-03-10.22:45:52::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2025-03-10.22:45:52::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2025-03-10.22:45:52::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRACE::2025-03-10.22:45:52::SCWMssOS::TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2025-03-10.22:45:52::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+TRACE::2025-03-10.22:45:52::SCWMssOS::A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-03-10.22:45:52::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2025-03-10.22:45:52::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-03-10.22:45:52::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2025-03-10.22:45:52::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:52::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-03-10.22:45:53::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+TRACE::2025-03-10.22:45:53::SCWMssOS::LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2025-03-10.22:45:53::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+TRACE::2025-03-10.22:45:53::SCWMssOS::ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-03-10.22:45:53::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+TRACE::2025-03-10.22:45:53::SCWMssOS::_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2025-03-10.22:45:53::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-03-10.22:45:53::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+TRACE::2025-03-10.22:45:53::SCWMssOS::OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::make --no-print-directory archive
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2025-03-10.22:45:54::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2025-03-10.22:45:54::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2025-03-10.22:45:54::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2025-03-10.22:45:54::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2025-03-10.22:45:54::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2025-03-10.22:45:54::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2025-03-10.22:45:54::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2025-03-10.22:45:54::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2025-03-10.22:45:54::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2025-03-10.22:45:54::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2025-03-10.22:45:54::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2025-03-10.22:45:54::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2025-03-10.22:45:54::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+TRACE::2025-03-10.22:45:54::SCWMssOS::b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+TRACE::2025-03-10.22:45:54::SCWMssOS::_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+TRACE::2025-03-10.22:45:54::SCWMssOS::m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+TRACE::2025-03-10.22:45:54::SCWMssOS::il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+TRACE::2025-03-10.22:45:54::SCWMssOS::o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+TRACE::2025-03-10.22:45:54::SCWMssOS::ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+TRACE::2025-03-10.22:45:54::SCWMssOS::e_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_
+TRACE::2025-03-10.22:45:54::SCWMssOS::0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::Copying to export directory.
+TRACE::2025-03-10.22:45:54::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-03-10.22:45:54::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-03-10.22:45:54::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2025-03-10.22:45:54::SCWSystem::Completed Processing the sysconfig mb_intro_top
+LOG::2025-03-10.22:45:54::SCWPlatform::Completed generating the artifacts for system configuration mb_intro_top
+TRACE::2025-03-10.22:45:54::SCWPlatform::Started preparing the platform 
+TRACE::2025-03-10.22:45:54::SCWSystem::Writing the bif file for system config mb_intro_top
+TRACE::2025-03-10.22:45:54::SCWSystem::dir created 
+TRACE::2025-03-10.22:45:54::SCWSystem::Writing the bif 
+TRACE::2025-03-10.22:45:54::SCWPlatform::Started writing the spfm file 
+TRACE::2025-03-10.22:45:54::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-03-10.22:45:54::SCWPlatform::Completed generating the platform
+TRACE::2025-03-10.22:45:54::SCWMssOS::Saving the mss changes D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-03-10.22:45:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-03-10.22:45:54::SCWMssOS::Commit changes completed.
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:45:54::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:45:54::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:45:54::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWWriter::formatted JSON is {
+	"platformName":	"mb_intro_top",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_intro_top",
+	"platHandOff":	"D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_intro_top.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_intro_top",
+	"systems":	[{
+			"systemName":	"mb_intro_top",
+			"systemDesc":	"mb_intro_top",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_intro_top",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"d71f0390b049c5e98d3f47dfaddd10a6",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-03-10.22:45:54::SCWPlatform::updated the xpfm file.
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to open the hw design at D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA given D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA absoulate path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform::DSA directory D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Platform Path D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/hw/mb_intro_top.xsa
+TRACE::2025-03-10.22:45:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Trying to set the existing hwdb with name mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Opened existing hwdb mb_intro_top_0
+TRACE::2025-03-10.22:45:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-10.22:45:54::SCWMssOS::Checking the sw design at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2025-03-10.22:45:54::SCWMssOS::DEBUG:  swdes dump  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2025-03-10.22:45:54::SCWMssOS::Sw design exists and opened at  D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/microblaze_0/standalone_microblaze_0/bsp/system.mss
