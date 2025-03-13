@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Mar 12 20:59:44 2025
+| Date         : Thu Mar 13 17:13:31 2025
 | Host         : Server running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mb_intro_top_utilization_synth.rpt -pb mb_intro_top_utilization_synth.pb
 | Design       : mb_intro_top
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   36 |     0 |          0 |       210 | 17.14 |
+| Bonded IOB                  |   39 |     0 |          0 |       210 | 18.57 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         5 |  0.00 |
@@ -148,7 +148,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |   19 |                  IO |
-| OBUF     |   17 |                  IO |
+| OBUF     |   18 |                  IO |
+| OBUFT    |    2 |                  IO |
 | LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 

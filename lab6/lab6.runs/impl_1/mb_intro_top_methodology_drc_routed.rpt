@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Mar 12 21:00:52 2025
+| Date         : Thu Mar 13 17:14:39 2025
 | Host         : Server running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mb_intro_top_methodology_drc_routed.rpt -pb mb_intro_top_methodology_drc_routed.pb -rpx mb_intro_top_methodology_drc_routed.rpx
 | Design       : mb_intro_top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 42
+             Violations found: 45
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert  | 3          |
 | TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
-| TIMING-18 | Warning  | Missing input or output delay | 38         |
+| TIMING-18 | Warning  | Missing input or output delay | 41         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -240,6 +240,21 @@ An output delay is missing on led[9] relative to clock(s) clk
 Related violations: <none>
 
 TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on rgb0[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on rgb0[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on rgb0[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#41 Warning
 Missing input or output delay  
 An output delay is missing on uart_rxd relative to clock(s) clk
 Related violations: <none>

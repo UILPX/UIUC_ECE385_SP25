@@ -25,25 +25,25 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17264
+INFO: [Synth 8-7075] Helper process launched with PID 29628
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1214.102 ; gain = 408.660
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1213.270 ; gain = 407.875
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_intro_top' [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/sources_1/imports/design_source/mb_intro_top.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'mb_block' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:800]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
@@ -53,33 +53,33 @@ INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [d:/School/U
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1612]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1612]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1337]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1337]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_block_xbar_0' has 40 connections declared, but only 38 given [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1337]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:800]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1378]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1524]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1595]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1595]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1595]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1378]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-18480-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/.Xil/Vivado-21144-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:789]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:789]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:789]
@@ -109,21 +109,23 @@ WARNING: [Synth 8-7129] Port M02_ACLK in module mb_block_microblaze_0_axi_periph
 WARNING: [Synth 8-7129] Port M02_ARESETN in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ACLK in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rgb0[2] in module mb_intro_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rgb0[1] in module mb_intro_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[3] in module mb_intro_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[2] in module mb_intro_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.074 ; gain = 504.633
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.699 ; gain = 505.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.074 ; gain = 504.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.699 ; gain = 505.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.074 ; gain = 504.633
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1310.699 ; gain = 505.305
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1310.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1310.699 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -155,9 +157,6 @@ Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd
 Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/axi_gpio_0'
 Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/axi_gpio_0'
 Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[0]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:53]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[1]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:54]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[2]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:55]
 WARNING: [Vivado 12-584] No ports matched 'rgb1[0]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:56]
 WARNING: [Vivado 12-584] No ports matched 'rgb1[1]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:57]
 WARNING: [Vivado 12-584] No ports matched 'rgb1[2]'. [D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:58]
@@ -211,24 +210,24 @@ Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/dont_touch.x
 Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1319.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1327.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1319.297 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1327.992 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -251,10 +250,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/rst_clk_wiz_1_100M. (c
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_gpio_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -284,28 +283,30 @@ WARNING: [Synth 8-7129] Port M02_ACLK in module mb_block_microblaze_0_axi_periph
 WARNING: [Synth 8-7129] Port M02_ARESETN in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ACLK in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module mb_block_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rgb0[2] in module mb_intro_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rgb0[1] in module mb_intro_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[3] in module mb_intro_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[2] in module mb_intro_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.340 ; gain = 513.898
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1320.215 ; gain = 514.773
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -323,37 +324,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -397,27 +398,28 @@ Report Cell Usage:
 |13    |mb_block_xbar                  |     1|
 |14    |LUT1                           |     1|
 |15    |IBUF                           |    19|
-|16    |OBUF                           |    17|
+|16    |OBUF                           |    18|
+|17    |OBUFT                          |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.000 ; gain = 511.293
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.000 ; gain = 520.559
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.992 ; gain = 505.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.992 ; gain = 522.598
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1338.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1338.859 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1341.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1342.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 922cf0db
+Synth Design complete, checksum: 92185891
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1341.691 ; gain = 913.012
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1342.488 ; gain = 912.461
 INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab6/lab6.runs/synth_1/mb_intro_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_intro_top_utilization_synth.rpt -pb mb_intro_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 12 20:59:44 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 13 17:13:31 2025...

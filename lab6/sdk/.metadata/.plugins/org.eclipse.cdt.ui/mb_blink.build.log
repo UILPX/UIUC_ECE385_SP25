@@ -1,4 +1,4 @@
-22:34:27 **** Incremental Build of configuration Debug for project mb_blink ****
+17:21:50 **** Incremental Build of configuration Debug for project mb_blink ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/School/UIUC_ECE385_SP25/lab6/sdk/mb_int
 'Invoking: MicroBlaze Print Size'
 mb-size mb_blink.elf  |tee "mb_blink.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  16664	   1368	   3168	  21200	   52d0	mb_blink.elf
+   6024	    328	   3104	   9456	   24f0	mb_blink.elf
 'Finished building: mb_blink.elf.size'
 ' '
 
-22:34:28 Build Finished (took 511ms)
+17:21:50 Build Finished (took 502ms)
 

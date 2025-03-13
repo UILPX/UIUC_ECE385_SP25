@@ -9,13 +9,14 @@
 //Modified on 7/25/23 Zuofu Cheng
 
 #include <stdio.h>
+#include <stdint.h>
 #include <xparameters.h>
 #include <xil_types.h>
 #include <sleep.h>
 #include "platform.h"
 
-volatile uint32_t* led_gpio_data = (uint32_t *)XPAR_GPIO_0_BASEADDR; 			 //Hint: either find the manual address (via the memory map in the block diagram, or
-volatile uint32_t* b_sw_gpio2_data = (uint32_t *)XPAR_GPIO_0_BASEADDR+0x00000008;		 //replace with the proper define in xparameters (part of the BSP). Either way
+volatile uint32_t* b_sw = (uint32_t *)XPAR_GPIO_0_BASEADDR; 			 //Hint: either find the manual address (via the memory map in the block diagram, or
+volatile uint32_t* led = (uint32_t *)(XPAR_GPIO_0_BASEADDR+0x08);		 //replace with the proper define in xparameters (part of the BSP). Either way
 //volatile uint32_t* sw_gpio_data = (uint32_t *)XPAR_GPIO_0_BASEADDR;  	 	 	 //this is the base address of the GPIO corresponding to your LEDs
 //volatile uint32_t* sw_gpio_data = (uint32_t *)XPAR_GPIO_0_BASEADDR; 			 //(similar to 0xFFFF from MEM2IO from previous labs).
 
@@ -23,48 +24,32 @@ int main()
 {
     init_platform();
 
+int curr = 0;
+int prev = 0;
+*led = 0x1FFFF;
+sleep(1);
+*led = 0x00000;
     while (1) {
-//    	printf("while loop");
             // Check button pressed
-            if (*b_sw_gpio2_data & 0x00010000) {
-                printf("Button pressed!\r\n");
-
+    	curr = *b_sw & 0x00010000;
+    	usleep(200000);
+            if (curr && !prev) {
+                	xil_printf("Switch Input = %u \r\nCurrent LED = %u\r\n",*b_sw & 0x0FFFF,*led);
                 // Accumulate values
-                *led_gpio_data += (*b_sw_gpio2_data & 0x0000FFFF);
-                printf("Accumulate\r\n");
+                *led += (*b_sw & 0x0FFFF);
+                	xil_printf("New LED Value = %u\r\n",*led);
 
                 //overflow detection
-                if (*led_gpio_data & 0xFFFF0000) {
-                    printf("Overflow detected! Resetting accumulator.\n");
-                    *led_gpio_data &= 0x0000FFFF;  // Keep lower 16 bits, clear overflow
+                if (*led & 0xFFFF0000) {
+                	usleep(200000);
+                    *led = *led & 0x0000FFFF;  // Keep lower 16 bits, clear overflow
+                    	xil_printf("Overflow detected!\r\nNew LED Value = %u\r\n",*led);
                 }
-
-                // Debouncer
-                while (*b_sw_gpio2_data & 0x00010000);
-                sleep(5);
             }
+            prev = curr;
         }
 
     cleanup_platform();
 
     return 0;
 }
-/*
-int main()
-{
-    init_platform();
-
-	while (1+1 != 3)
-	{
-		sleep(1);
-		*led_gpio_data |=  0x00000001;
-		printf("Led On!\r\n");
-		sleep(1);
-		*led_gpio_data &= ~0x00000001; //blinks LED
-		printf("Led Off!\r\n");
-	}
-
-    cleanup_platform();
-
-    return 0;
-}*/

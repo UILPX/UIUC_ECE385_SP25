@@ -1,0 +1,54 @@
+//mb_blink.c
+//
+//Provided boilerplate "LED Blink" code for ECE 385
+//First released in ECE 385, Fall 2023 distribution
+//
+//Note: you will have to refer to the memory map of your MicroBlaze
+//system to find the proper address for the LED GPIO peripheral.
+//
+//Modified on 7/25/23 Zuofu Cheng
+
+#include <stdio.h>
+#include <stdint.h>
+#include <xparameters.h>
+#include <xil_types.h>
+#include <sleep.h>
+#include "platform.h"
+
+volatile uint32_t* b_sw = (uint32_t *)XPAR_GPIO_0_BASEADDR; 			 //Hint: either find the manual address (via the memory map in the block diagram, or
+volatile uint32_t* led = (uint32_t *)(XPAR_GPIO_0_BASEADDR+0x08);		 //replace with the proper define in xparameters (part of the BSP). Either way
+//volatile uint32_t* sw_gpio_data = (uint32_t *)XPAR_GPIO_0_BASEADDR;  	 	 	 //this is the base address of the GPIO corresponding to your LEDs
+//volatile uint32_t* sw_gpio_data = (uint32_t *)XPAR_GPIO_0_BASEADDR; 			 //(similar to 0xFFFF from MEM2IO from previous labs).
+
+int main()
+{
+    init_platform();
+
+int curr = 0;
+int prev = 0;
+*led = 0x1FFFF;
+sleep(1);
+*led = 0x00000;
+    while (1) {
+            // Check button pressed
+    	curr = *b_sw & 0x00010000;
+    	usleep(200000);
+            if (curr && !prev) {
+                	xil_printf("Switch Input = %u \r\nCurrent LED = %u\r\n",*b_sw & 0x0FFFF,*led);
+                // Accumulate values
+                *led += (*b_sw & 0x0FFFF);
+                	xil_printf("New LED Value = %u\r\n",*led);
+
+                //overflow detection
+                if (*led & 0xFFFF0000) {
+                    *led = *led & 0x0000FFFF;  // Keep lower 16 bits, clear overflow
+                    	xil_printf("Overflow detected!\r\nNew LED Value = %u\r\n",*led);
+                }
+            }
+            prev = curr;
+        }
+
+    cleanup_platform();
+
+    return 0;
+}

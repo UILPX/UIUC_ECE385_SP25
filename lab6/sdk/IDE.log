@@ -700,3 +700,2037 @@ Troubleshooting hints:
 1. Check whether board is connected to system properly.
 2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
 3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+22:49:45 DEBUG : Logs will be stored at 'D:/School/UIUC_ECE385_SP25/lab6/sdk/IDE.log'.
+22:49:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\School\UIUC_ECE385_SP25\lab6\sdk\temp_xsdb_launch_script.tcl
+22:49:47 INFO  : XSCT server has started successfully.
+22:49:47 INFO  : plnx-install-location is set to ''
+22:49:47 INFO  : Successfully done setting XSCT server connection channel  
+22:49:47 INFO  : Successfully done setting workspace for the tool. 
+22:49:48 INFO  : Platform repository initialization has completed.
+22:49:48 INFO  : Registering command handlers for Vitis TCF services
+22:49:48 INFO  : Successfully done query RDI_DATADIR 
+23:07:23 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:17:22 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:21:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:24 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:21:24 INFO  : 'jtag frequency' command is executed.
+23:21:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:21:26 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:21:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:26 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:21:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:21:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:26 INFO  : System reset is completed.
+23:21:29 INFO  : 'after 3000' command is executed.
+23:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:30 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:21:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:21:30 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:30 INFO  : 'con' command is executed.
+23:21:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:21:30 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:22:29 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:22:35 INFO  : Disconnected from the channel tcfchan#1.
+23:22:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:36 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:22:36 INFO  : 'jtag frequency' command is executed.
+23:22:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:22:38 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:22:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:38 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:22:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:22:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:38 INFO  : System reset is completed.
+23:22:41 INFO  : 'after 3000' command is executed.
+23:22:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:41 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:22:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:22:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:41 INFO  : 'con' command is executed.
+23:22:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:22:41 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:22:43 INFO  : Disconnected from the channel tcfchan#2.
+23:22:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:44 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:22:44 INFO  : 'jtag frequency' command is executed.
+23:22:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:22:45 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:22:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:46 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:22:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:22:46 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:46 INFO  : System reset is completed.
+23:22:49 INFO  : 'after 3000' command is executed.
+23:22:49 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:49 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:22:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:22:49 INFO  : Context for processor 'microblaze_0' is selected.
+23:22:49 INFO  : 'con' command is executed.
+23:22:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:22:49 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:24:02 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:24:08 INFO  : Disconnected from the channel tcfchan#3.
+23:24:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:09 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:24:09 INFO  : 'jtag frequency' command is executed.
+23:24:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:24:11 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:24:11 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:11 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:24:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:24:11 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:11 INFO  : System reset is completed.
+23:24:14 INFO  : 'after 3000' command is executed.
+23:24:14 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:14 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:24:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:24:14 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:14 INFO  : 'con' command is executed.
+23:24:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:24:14 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:26:12 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:26:21 INFO  : Disconnected from the channel tcfchan#4.
+23:26:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:22 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:26:22 INFO  : 'jtag frequency' command is executed.
+23:26:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:26:23 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:26:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:23 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:26:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:26:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:23 INFO  : System reset is completed.
+23:26:26 INFO  : 'after 3000' command is executed.
+23:26:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:27 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:26:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:27 INFO  : 'con' command is executed.
+23:26:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:26:27 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:28:08 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:28:28 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:28:31 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:28:35 INFO  : Disconnected from the channel tcfchan#5.
+23:28:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:37 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:28:37 INFO  : 'jtag frequency' command is executed.
+23:28:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:28:38 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:28:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:38 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:28:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:28:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:38 INFO  : System reset is completed.
+23:28:41 INFO  : 'after 3000' command is executed.
+23:28:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:41 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:28:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:28:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:41 INFO  : 'con' command is executed.
+23:28:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:28:41 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:29:25 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:29:27 INFO  : Disconnected from the channel tcfchan#6.
+23:29:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:29:29 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:29:29 INFO  : 'jtag frequency' command is executed.
+23:29:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:29:30 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:29:30 INFO  : Context for processor 'microblaze_0' is selected.
+23:29:30 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:29:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:29:30 INFO  : Context for processor 'microblaze_0' is selected.
+23:29:30 INFO  : System reset is completed.
+23:29:33 INFO  : 'after 3000' command is executed.
+23:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+23:29:33 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+23:29:33 INFO  : 'con' command is executed.
+23:29:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:29:33 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:30:27 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:30:30 INFO  : Disconnected from the channel tcfchan#7.
+23:30:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:31 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:30:31 INFO  : 'jtag frequency' command is executed.
+23:30:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:30:32 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:30:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:32 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:30:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:30:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:32 INFO  : System reset is completed.
+23:30:35 INFO  : 'after 3000' command is executed.
+23:30:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:35 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:30:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:30:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:36 INFO  : 'con' command is executed.
+23:30:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:30:36 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:31:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:31:23 INFO  : Disconnected from the channel tcfchan#8.
+23:31:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:31:24 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:31:24 INFO  : 'jtag frequency' command is executed.
+23:31:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:31:26 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:31:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:26 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:31:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:31:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:26 INFO  : System reset is completed.
+23:31:29 INFO  : 'after 3000' command is executed.
+23:31:29 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:29 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:31:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:31:29 INFO  : Context for processor 'microblaze_0' is selected.
+23:31:29 INFO  : 'con' command is executed.
+23:31:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:31:29 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:33:31 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:36:23 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:36:29 INFO  : Disconnected from the channel tcfchan#9.
+23:36:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:30 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:36:30 INFO  : 'jtag frequency' command is executed.
+23:36:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:36:32 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:36:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:32 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:36:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:36:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:32 INFO  : System reset is completed.
+23:36:35 INFO  : 'after 3000' command is executed.
+23:36:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:35 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:36:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:36:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:35 INFO  : 'con' command is executed.
+23:36:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:36:35 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:38:19 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+23:38:30 INFO  : Disconnected from the channel tcfchan#10.
+23:38:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:31 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:38:31 INFO  : 'jtag frequency' command is executed.
+23:38:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:38:32 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:38:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:32 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:38:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:38:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:32 INFO  : System reset is completed.
+23:38:35 INFO  : 'after 3000' command is executed.
+23:38:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:35 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:38:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:38:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:35 INFO  : 'con' command is executed.
+23:38:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:38:35 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:45:10 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+23:45:20 INFO  : Disconnected from the channel tcfchan#11.
+23:45:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:21 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:45:21 INFO  : 'jtag frequency' command is executed.
+23:45:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:45:23 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:45:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:23 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:45:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:45:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:23 INFO  : System reset is completed.
+23:45:26 INFO  : 'after 3000' command is executed.
+23:45:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:26 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:45:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:45:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:26 INFO  : 'con' command is executed.
+23:45:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:45:26 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:45:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:45:27 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+23:45:27 INFO  : 'jtag frequency' command is executed.
+23:45:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:45:28 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+23:45:28 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:28 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+23:45:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:45:28 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:28 INFO  : System reset is completed.
+23:45:31 INFO  : 'after 3000' command is executed.
+23:45:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:31 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+23:45:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+23:45:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:45:31 INFO  : 'con' command is executed.
+23:45:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:45:31 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+23:57:52 INFO  : Disconnected from the channel tcfchan#12.
+11:15:45 DEBUG : Logs will be stored at 'D:/School/UIUC_ECE385_SP25/lab6/sdk/IDE.log'.
+11:15:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\School\UIUC_ECE385_SP25\lab6\sdk\temp_xsdb_launch_script.tcl
+11:15:48 INFO  : Registering command handlers for Vitis TCF services
+11:15:48 INFO  : Platform repository initialization has completed.
+11:15:49 INFO  : XSCT server has started successfully.
+11:15:53 INFO  : plnx-install-location is set to ''
+11:15:53 INFO  : Successfully done setting XSCT server connection channel  
+11:15:53 INFO  : Successfully done query RDI_DATADIR 
+11:15:53 INFO  : Successfully done setting workspace for the tool. 
+11:39:38 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+11:40:19 INFO  : Result from executing command 'getProjects': mb_intro_top
+11:40:19 INFO  : Result from executing command 'getPlatforms': mb_intro_top|D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+11:40:19 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+11:40:21 INFO  : The hardware specification used by project 'mb_blink' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:40:21 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.bit' stored in project is removed.
+11:40:21 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.mmi' stored in project is removed.
+11:40:21 INFO  : The updated bitstream files are copied from platform to folder 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream' in project 'mb_blink'.
+14:51:53 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+14:55:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:05 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+14:55:05 INFO  : 'jtag frequency' command is executed.
+14:55:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:55:07 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+14:55:07 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:07 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+14:55:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:55:07 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:07 INFO  : System reset is completed.
+14:55:10 INFO  : 'after 3000' command is executed.
+14:55:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:11 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+14:55:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+14:55:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:11 INFO  : 'con' command is executed.
+14:55:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:55:11 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+14:55:12 INFO  : Disconnected from the channel tcfchan#2.
+14:55:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:13 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+14:55:13 INFO  : 'jtag frequency' command is executed.
+14:55:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:55:14 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+14:55:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:14 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+14:55:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:55:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:14 INFO  : System reset is completed.
+14:55:17 INFO  : 'after 3000' command is executed.
+14:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:18 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+14:55:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+14:55:18 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:18 INFO  : 'con' command is executed.
+14:55:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:55:18 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+14:55:19 INFO  : Disconnected from the channel tcfchan#3.
+14:55:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:25 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+14:55:25 INFO  : 'jtag frequency' command is executed.
+14:55:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+14:55:26 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+14:55:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:55:29 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:29 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+14:55:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:29 INFO  : System reset is completed.
+14:55:32 INFO  : 'after 3000' command is executed.
+14:55:33 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:33 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+14:55:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+14:55:33 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:33 INFO  : 'con' command is executed.
+14:55:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:55:33 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:00:38 INFO  : Result from executing command 'getProjects': mb_intro_top
+15:00:38 INFO  : Result from executing command 'getPlatforms': mb_intro_top|D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+15:00:38 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:00:39 INFO  : The hardware specification used by project 'mb_blink' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:00:39 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.bit' stored in project is removed.
+15:00:39 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.mmi' stored in project is removed.
+15:00:39 INFO  : The updated bitstream files are copied from platform to folder 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream' in project 'mb_blink'.
+15:00:41 INFO  : Disconnected from the channel tcfchan#4.
+15:00:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:00:52 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:01:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:28 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:01:28 INFO  : 'jtag frequency' command is executed.
+15:01:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:01:29 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:01:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:30 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:01:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:01:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:30 INFO  : System reset is completed.
+15:01:33 INFO  : 'after 3000' command is executed.
+15:01:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:33 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:01:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:01:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:33 INFO  : 'con' command is executed.
+15:01:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:01:33 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:01:46 INFO  : Disconnected from the channel tcfchan#6.
+15:01:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:48 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:01:48 INFO  : 'jtag frequency' command is executed.
+15:01:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:01:49 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:01:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:49 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:01:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:01:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:49 INFO  : System reset is completed.
+15:01:52 INFO  : 'after 3000' command is executed.
+15:01:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:52 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:01:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:01:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:52 INFO  : 'con' command is executed.
+15:01:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:01:52 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:01:53 INFO  : Disconnected from the channel tcfchan#7.
+15:01:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:55 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:01:55 INFO  : 'jtag frequency' command is executed.
+15:01:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:01:56 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:01:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:56 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:01:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:01:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:56 INFO  : System reset is completed.
+15:01:59 INFO  : 'after 3000' command is executed.
+15:01:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:59 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:01:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:01:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:59 INFO  : 'con' command is executed.
+15:01:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:01:59 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:06:17 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:06:29 INFO  : Disconnected from the channel tcfchan#8.
+15:06:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:31 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:06:31 INFO  : 'jtag frequency' command is executed.
+15:06:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:06:32 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:06:32 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:06:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:06:32 INFO  : System reset is completed.
+15:06:35 INFO  : 'after 3000' command is executed.
+15:06:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:06:35 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:06:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:06:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:06:35 INFO  : 'con' command is executed.
+15:06:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:06:35 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:17:58 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:18:01 INFO  : Disconnected from the channel tcfchan#9.
+15:18:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:02 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:18:02 INFO  : 'jtag frequency' command is executed.
+15:18:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:18:03 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:18:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:18:03 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:18:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:18:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:18:03 INFO  : System reset is completed.
+15:18:06 INFO  : 'after 3000' command is executed.
+15:18:06 INFO  : Context for processor 'microblaze_0' is selected.
+15:18:06 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:18:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:18:06 INFO  : Context for processor 'microblaze_0' is selected.
+15:18:06 INFO  : 'con' command is executed.
+15:18:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:18:06 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:18:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:18:58 INFO  : Disconnected from the channel tcfchan#10.
+15:18:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:59 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:18:59 INFO  : 'jtag frequency' command is executed.
+15:18:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:19:00 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:19:00 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:00 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:19:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:19:00 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:00 INFO  : System reset is completed.
+15:19:03 INFO  : 'after 3000' command is executed.
+15:19:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:03 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+15:19:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:19:03 ERROR : Cannot stop MicroBlaze. MicroBlaze is held in reset
+15:19:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:08 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:19:08 INFO  : 'jtag frequency' command is executed.
+15:19:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:19:09 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:19:09 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:09 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:19:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:19:09 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:09 INFO  : System reset is completed.
+15:19:12 INFO  : 'after 3000' command is executed.
+15:19:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:12 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:19:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:19:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:12 INFO  : 'con' command is executed.
+15:19:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:19:12 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:20:46 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:20:50 INFO  : Disconnected from the channel tcfchan#11.
+15:20:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:20:51 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:20:51 INFO  : 'jtag frequency' command is executed.
+15:20:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:20:53 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:20:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:20:53 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:20:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:20:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:20:53 INFO  : System reset is completed.
+15:20:56 INFO  : 'after 3000' command is executed.
+15:20:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:20:56 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:20:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:20:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:20:56 INFO  : 'con' command is executed.
+15:20:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:20:56 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:21:15 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:21:18 INFO  : Disconnected from the channel tcfchan#12.
+15:21:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:21:28 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:22:45 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:22:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:54 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:22:54 INFO  : 'jtag frequency' command is executed.
+15:22:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:22:55 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:22:55 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:55 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:22:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:22:55 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:55 INFO  : System reset is completed.
+15:22:58 INFO  : 'after 3000' command is executed.
+15:22:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:58 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:22:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:22:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:22:58 INFO  : 'con' command is executed.
+15:22:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:22:58 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:33:27 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:34:32 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:34:37 INFO  : Disconnected from the channel tcfchan#13.
+15:34:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:34:47 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:34:51 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:34:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:54 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:34:54 INFO  : 'jtag frequency' command is executed.
+15:34:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:34:56 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:34:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:56 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:34:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:34:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:56 INFO  : System reset is completed.
+15:34:59 INFO  : 'after 3000' command is executed.
+15:34:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:59 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:34:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:34:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:59 INFO  : 'con' command is executed.
+15:34:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:34:59 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+15:50:29 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:53:11 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+15:53:13 INFO  : Disconnected from the channel tcfchan#14.
+15:53:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:14 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+15:53:14 INFO  : 'jtag frequency' command is executed.
+15:53:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+15:53:16 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+15:53:16 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:16 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+15:53:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:53:16 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:16 INFO  : System reset is completed.
+15:53:19 INFO  : 'after 3000' command is executed.
+15:53:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:19 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+15:53:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+15:53:19 INFO  : Context for processor 'microblaze_0' is selected.
+15:53:19 INFO  : 'con' command is executed.
+15:53:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:53:19 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:13:11 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:13:14 INFO  : Disconnected from the channel tcfchan#15.
+16:13:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:13:24 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:13:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:33 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:13:33 INFO  : 'jtag frequency' command is executed.
+16:13:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:13:34 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:13:34 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:34 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:13:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:13:34 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:34 INFO  : System reset is completed.
+16:13:37 INFO  : 'after 3000' command is executed.
+16:13:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:37 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:13:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:13:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:37 INFO  : 'con' command is executed.
+16:13:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:13:37 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:13:38 INFO  : Disconnected from the channel tcfchan#16.
+16:13:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:39 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:13:39 INFO  : 'jtag frequency' command is executed.
+16:13:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:13:40 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:13:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:40 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:13:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:13:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:40 INFO  : System reset is completed.
+16:13:43 INFO  : 'after 3000' command is executed.
+16:13:43 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:43 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:13:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:13:43 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:43 INFO  : 'con' command is executed.
+16:13:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:13:43 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:15:05 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:15:09 INFO  : Disconnected from the channel tcfchan#17.
+16:15:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:10 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:15:10 INFO  : 'jtag frequency' command is executed.
+16:15:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:15:11 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:15:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:15:11 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:15:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:15:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:15:11 INFO  : System reset is completed.
+16:15:14 INFO  : 'after 3000' command is executed.
+16:15:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:15:14 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:15:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:15:14 INFO  : Context for processor 'microblaze_0' is selected.
+16:15:14 INFO  : 'con' command is executed.
+16:15:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:15:14 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:16:38 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:16:42 INFO  : Disconnected from the channel tcfchan#18.
+16:16:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:43 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:16:43 INFO  : 'jtag frequency' command is executed.
+16:16:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:16:44 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:44 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:16:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:44 INFO  : System reset is completed.
+16:16:47 INFO  : 'after 3000' command is executed.
+16:16:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:47 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:16:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:16:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:16:47 INFO  : 'con' command is executed.
+16:16:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:16:47 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:18:01 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:18:06 INFO  : Disconnected from the channel tcfchan#19.
+16:18:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:07 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:18:07 INFO  : 'jtag frequency' command is executed.
+16:18:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:18:08 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:18:08 INFO  : Context for processor 'microblaze_0' is selected.
+16:18:08 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:18:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:18:08 INFO  : Context for processor 'microblaze_0' is selected.
+16:18:08 INFO  : System reset is completed.
+16:18:11 INFO  : 'after 3000' command is executed.
+16:18:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:18:11 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:18:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:18:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:18:11 INFO  : 'con' command is executed.
+16:18:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:18:11 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:19:58 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:20:00 INFO  : Disconnected from the channel tcfchan#20.
+16:20:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:01 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:20:01 INFO  : 'jtag frequency' command is executed.
+16:20:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:20:03 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:20:03 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:03 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:20:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:20:03 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:03 INFO  : System reset is completed.
+16:20:06 INFO  : 'after 3000' command is executed.
+16:20:06 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:06 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:20:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:20:06 INFO  : Context for processor 'microblaze_0' is selected.
+16:20:06 INFO  : 'con' command is executed.
+16:20:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:20:06 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:34:13 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:39:39 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+16:39:48 INFO  : Result from executing command 'getProjects': mb_intro_top
+16:39:48 INFO  : Result from executing command 'getPlatforms': mb_intro_top|D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+16:39:49 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:39:50 INFO  : The hardware specification used by project 'mb_blink' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+16:39:50 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.bit' stored in project is removed.
+16:39:50 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.mmi' stored in project is removed.
+16:39:50 INFO  : The updated bitstream files are copied from platform to folder 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream' in project 'mb_blink'.
+16:39:59 INFO  : Disconnected from the channel tcfchan#21.
+16:40:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:40:10 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:40:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:16 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:40:16 INFO  : 'jtag frequency' command is executed.
+16:40:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:40:17 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:40:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:17 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:40:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:40:17 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:17 INFO  : System reset is completed.
+16:40:20 INFO  : 'after 3000' command is executed.
+16:40:20 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:20 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:40:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:40:20 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:20 INFO  : 'con' command is executed.
+16:40:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:40:20 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:40:21 INFO  : Disconnected from the channel tcfchan#23.
+16:40:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:22 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:40:22 INFO  : 'jtag frequency' command is executed.
+16:40:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:40:23 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:40:23 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:23 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:40:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:40:23 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:23 INFO  : System reset is completed.
+16:40:26 INFO  : 'after 3000' command is executed.
+16:40:26 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:26 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:40:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:40:27 INFO  : Context for processor 'microblaze_0' is selected.
+16:40:27 INFO  : 'con' command is executed.
+16:40:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:40:27 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:41:11 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:41:16 INFO  : Disconnected from the channel tcfchan#24.
+16:41:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:17 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:41:17 INFO  : 'jtag frequency' command is executed.
+16:41:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:41:18 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:41:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:18 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:41:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:41:18 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:18 INFO  : System reset is completed.
+16:41:21 INFO  : 'after 3000' command is executed.
+16:41:21 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:21 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:41:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:41:22 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:22 INFO  : 'con' command is executed.
+16:41:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:41:22 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:41:40 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:41:45 INFO  : Disconnected from the channel tcfchan#25.
+16:41:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:46 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:41:46 INFO  : 'jtag frequency' command is executed.
+16:41:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:41:47 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:41:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:47 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:41:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:41:47 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:47 INFO  : System reset is completed.
+16:41:50 INFO  : 'after 3000' command is executed.
+16:41:50 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:50 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:41:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:41:50 INFO  : Context for processor 'microblaze_0' is selected.
+16:41:50 INFO  : 'con' command is executed.
+16:41:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:41:50 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:42:59 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:43:05 INFO  : Disconnected from the channel tcfchan#26.
+16:43:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:43:15 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:43:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:18 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:43:18 INFO  : 'jtag frequency' command is executed.
+16:43:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:43:19 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:43:19 INFO  : Context for processor 'microblaze_0' is selected.
+16:43:19 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:43:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:43:19 INFO  : Context for processor 'microblaze_0' is selected.
+16:43:19 INFO  : System reset is completed.
+16:43:22 INFO  : 'after 3000' command is executed.
+16:43:22 INFO  : Context for processor 'microblaze_0' is selected.
+16:43:22 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:43:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:43:22 INFO  : Context for processor 'microblaze_0' is selected.
+16:43:22 INFO  : 'con' command is executed.
+16:43:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:43:22 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:44:13 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:44:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:44:25 INFO  : Disconnected from the channel tcfchan#27.
+16:44:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:44:35 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:44:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:37 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:44:37 INFO  : 'jtag frequency' command is executed.
+16:44:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:44:39 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:44:39 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:39 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:44:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:44:39 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:39 INFO  : System reset is completed.
+16:44:42 INFO  : 'after 3000' command is executed.
+16:44:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:42 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:44:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:44:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:44:42 INFO  : 'con' command is executed.
+16:44:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:44:42 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:46:21 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:46:31 INFO  : Disconnected from the channel tcfchan#28.
+16:46:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:33 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:46:33 INFO  : 'jtag frequency' command is executed.
+16:46:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:46:34 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:46:34 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:34 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:46:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:46:34 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:34 INFO  : System reset is completed.
+16:46:37 INFO  : 'after 3000' command is executed.
+16:46:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:37 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:46:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:46:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:37 INFO  : 'con' command is executed.
+16:46:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:46:37 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:48:51 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:48:54 INFO  : Disconnected from the channel tcfchan#29.
+16:48:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:55 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:48:55 INFO  : 'jtag frequency' command is executed.
+16:48:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:48:56 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:48:56 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:56 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:48:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:48:56 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:56 INFO  : System reset is completed.
+16:48:59 INFO  : 'after 3000' command is executed.
+16:48:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:59 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:48:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:48:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:59 INFO  : 'con' command is executed.
+16:48:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:48:59 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:51:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:51:58 INFO  : Disconnected from the channel tcfchan#30.
+16:51:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:52:08 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:52:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:12 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:52:12 INFO  : 'jtag frequency' command is executed.
+16:52:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:52:13 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:52:13 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:13 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:52:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:52:13 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:13 INFO  : System reset is completed.
+16:52:16 INFO  : 'after 3000' command is executed.
+16:52:16 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:16 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:52:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:52:16 INFO  : Context for processor 'microblaze_0' is selected.
+16:52:16 INFO  : 'con' command is executed.
+16:52:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:52:16 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:54:05 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:54:10 INFO  : Disconnected from the channel tcfchan#31.
+16:54:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:11 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:54:11 INFO  : 'jtag frequency' command is executed.
+16:54:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:54:12 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:54:12 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:12 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:54:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:54:12 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:12 INFO  : System reset is completed.
+16:54:15 INFO  : 'after 3000' command is executed.
+16:54:15 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:15 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:54:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:54:16 INFO  : Context for processor 'microblaze_0' is selected.
+16:54:16 INFO  : 'con' command is executed.
+16:54:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:54:16 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+16:56:51 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+16:56:58 INFO  : Disconnected from the channel tcfchan#32.
+16:56:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:56:59 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+16:56:59 INFO  : 'jtag frequency' command is executed.
+16:56:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:57:01 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+16:57:01 INFO  : Context for processor 'microblaze_0' is selected.
+16:57:01 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+16:57:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:57:01 INFO  : Context for processor 'microblaze_0' is selected.
+16:57:01 INFO  : System reset is completed.
+16:57:04 INFO  : 'after 3000' command is executed.
+16:57:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:57:04 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+16:57:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+16:57:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:57:04 INFO  : 'con' command is executed.
+16:57:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:57:04 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:00:24 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:00:29 INFO  : Disconnected from the channel tcfchan#33.
+17:00:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:30 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:00:30 INFO  : 'jtag frequency' command is executed.
+17:00:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:00:31 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:00:31 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:31 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:00:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:00:31 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:31 INFO  : System reset is completed.
+17:00:34 INFO  : 'after 3000' command is executed.
+17:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:34 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:00:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+17:00:34 INFO  : 'con' command is executed.
+17:00:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:00:34 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:02:23 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:02:34 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:02:37 INFO  : Disconnected from the channel tcfchan#34.
+17:02:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:39 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:02:39 INFO  : 'jtag frequency' command is executed.
+17:02:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:02:40 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:02:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:02:40 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:02:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:02:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:02:40 INFO  : System reset is completed.
+17:02:43 INFO  : 'after 3000' command is executed.
+17:02:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:02:43 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:02:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:02:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:02:43 INFO  : 'con' command is executed.
+17:02:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:02:43 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:04:51 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:05:36 INFO  : Disconnected from the channel tcfchan#35.
+17:05:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:37 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:05:37 INFO  : 'jtag frequency' command is executed.
+17:05:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:05:38 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:05:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:38 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:05:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:05:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:38 INFO  : System reset is completed.
+17:05:41 INFO  : 'after 3000' command is executed.
+17:05:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:42 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:05:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:05:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:05:42 INFO  : 'con' command is executed.
+17:05:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:05:42 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:15:45 INFO  : Hardware specification for platform project 'mb_intro_top' is updated.
+17:16:21 INFO  : Result from executing command 'getProjects': mb_intro_top
+17:16:21 INFO  : Result from executing command 'getPlatforms': mb_intro_top|D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+17:16:21 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:16:23 INFO  : The hardware specification used by project 'mb_blink' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+17:16:23 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.bit' stored in project is removed.
+17:16:23 INFO  : The file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream\mb_intro_top.mmi' stored in project is removed.
+17:16:23 INFO  : The updated bitstream files are copied from platform to folder 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink\_ide\bitstream' in project 'mb_blink'.
+17:16:30 INFO  : Disconnected from the channel tcfchan#36.
+17:16:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:16:40 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:16:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:47 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:16:47 INFO  : 'jtag frequency' command is executed.
+17:16:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:16:48 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:16:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:48 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:16:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:16:48 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:48 INFO  : System reset is completed.
+17:16:51 INFO  : 'after 3000' command is executed.
+17:16:51 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:51 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:16:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:16:51 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:51 INFO  : 'con' command is executed.
+17:16:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:16:51 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:18:40 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:18:44 INFO  : Disconnected from the channel tcfchan#38.
+17:18:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:18:54 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:18:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:56 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:18:56 INFO  : 'jtag frequency' command is executed.
+17:18:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:18:58 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:18:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:58 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:18:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:18:58 INFO  : Context for processor 'microblaze_0' is selected.
+17:18:58 INFO  : System reset is completed.
+17:19:01 INFO  : 'after 3000' command is executed.
+17:19:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:19:01 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:19:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:19:01 INFO  : Context for processor 'microblaze_0' is selected.
+17:19:01 INFO  : 'con' command is executed.
+17:19:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:19:01 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:20:58 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:21:50 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+17:21:53 INFO  : Disconnected from the channel tcfchan#39.
+17:21:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:22:03 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:22:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:07 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+17:22:07 INFO  : 'jtag frequency' command is executed.
+17:22:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:22:09 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+17:22:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:09 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+17:22:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:22:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:09 INFO  : System reset is completed.
+17:22:12 INFO  : 'after 3000' command is executed.
+17:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:12 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+17:22:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+17:22:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:22:12 INFO  : 'con' command is executed.
+17:22:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:22:12 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+17:23:10 INFO  : Disconnected from the channel tcfchan#40.
