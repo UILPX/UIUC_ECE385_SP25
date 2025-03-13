@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x97714044C3F7C062",
+      "boundary_crc": "0xAE734318E2C09D0D",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../lab6.gen/sources_1/bd/mb_block",
       "name": "mb_block",
@@ -57,7 +57,20 @@
           "TRI_O": {
             "physical_name": "gpio_rtl_0_tri_o",
             "direction": "O",
-            "left": "0",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "gpio_rtl_1": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_I": {
+            "physical_name": "gpio_rtl_1_tri_i",
+            "direction": "I",
+            "left": "16",
             "right": "0"
           }
         }
@@ -841,10 +854,19 @@
           "C_ALL_INPUTS": {
             "value": "0"
           },
+          "C_ALL_INPUTS_2": {
+            "value": "1"
+          },
           "C_ALL_OUTPUTS": {
             "value": "1"
           },
+          "C_GPIO2_WIDTH": {
+            "value": "17"
+          },
           "C_GPIO_WIDTH": {
+            "value": "16"
+          },
+          "C_IS_DUAL": {
             "value": "1"
           }
         }
@@ -855,6 +877,12 @@
         "interface_ports": [
           "gpio_rtl_0",
           "axi_gpio_0/GPIO"
+        ]
+      },
+      "axi_gpio_0_GPIO2": {
+        "interface_ports": [
+          "gpio_rtl_1",
+          "axi_gpio_0/GPIO2"
         ]
       },
       "axi_uartlite_0_UART": {

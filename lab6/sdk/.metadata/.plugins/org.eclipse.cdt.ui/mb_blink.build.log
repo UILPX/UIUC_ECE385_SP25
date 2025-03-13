@@ -1,11 +1,8 @@
-22:57:30 **** Incremental Build of configuration Debug for project mb_blink ****
+22:34:27 **** Incremental Build of configuration Debug for project mb_blink ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:18:36: warning: initialization of 'volatile uint32_t *' {aka 'volatile long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
-   18 | volatile uint32_t* led_gpio_data = 0x40000000;                           //Hint: either find the manual address (via the memory map in the block diagram, or
-      |                                    ^~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: mb_blink.elf'
@@ -16,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/School/UIUC_ECE385_SP25/lab6/sdk/mb_int
 'Invoking: MicroBlaze Print Size'
 mb-size mb_blink.elf  |tee "mb_blink.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  16508	   1364	   3176	  21048	   5238	mb_blink.elf
+  16664	   1368	   3168	  21200	   52d0	mb_blink.elf
 'Finished building: mb_blink.elf.size'
 ' '
 
-22:57:31 Build Finished (took 555ms)
+22:34:28 Build Finished (took 511ms)
 

@@ -88,7 +88,7 @@ set_property ip_output_repo d:/School/UIUC_ECE385_SP25/lab6/lab6.cache/ip [curre
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0.xci
+read_ip -quiet D:/School/UIUC_ECE385_SP25/lab6/lab6.srcs/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0.xci
 set_property used_in_implementation false [get_files -all d:/School/UIUC_ECE385_SP25/lab6/lab6.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
