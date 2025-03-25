@@ -2734,3 +2734,48 @@ con
 
 17:22:12 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
 17:23:10 INFO  : Disconnected from the channel tcfchan#40.
+10:06:32 DEBUG : Logs will be stored at 'D:/School/UIUC_ECE385_SP25/lab6/sdk/IDE.log'.
+10:06:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\School\UIUC_ECE385_SP25\lab6\sdk\temp_xsdb_launch_script.tcl
+10:06:35 INFO  : Platform repository initialization has completed.
+10:06:35 INFO  : Registering command handlers for Vitis TCF services
+10:06:36 INFO  : XSCT server has started successfully.
+10:06:40 INFO  : Successfully done setting XSCT server connection channel  
+10:06:40 INFO  : plnx-install-location is set to ''
+10:06:40 INFO  : Successfully done query RDI_DATADIR 
+10:06:40 INFO  : Successfully done setting workspace for the tool. 
+10:06:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:47 INFO  : Jtag cable 'RealDigital Boo 88710000000EA' is selected.
+10:06:47 INFO  : 'jtag frequency' command is executed.
+10:06:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+10:06:49 INFO  : Device configured successfully with "D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit"
+10:06:49 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:49 INFO  : Hardware design and registers information is loaded from 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+10:06:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:06:49 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:49 INFO  : System reset is completed.
+10:06:52 INFO  : 'after 3000' command is executed.
+10:06:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:52 INFO  : The application 'D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+10:06:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000EA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/School/UIUC_ECE385_SP25/lab6/sdk/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+10:06:53 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:53 INFO  : 'con' command is executed.
+10:06:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:06:53 INFO  : Launch script is exported to file 'D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_blink_system\_ide\scripts\debugger_mb_blink-default.tcl'
+10:08:30 INFO  : Disconnected from the channel tcfchan#1.

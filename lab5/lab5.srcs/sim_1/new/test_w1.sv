@@ -42,35 +42,17 @@ initial begin
 reset = 0;
 run_i = 0;
 continue_i = 0;
-sw_i = 16'h0000;
+sw_i = 16'h009c;
 #5;
 reset = 1;
-run_i = 0;
-continue_i = 0;
-sw_i = 16'h005a;
 #10 reset = 0;
 
 #10 run_i = 1;
 #10 run_i = 0;
 #200
 
-sw_i = 16'h0002;
-#10 continue_i = 1;
-#10continue_i = 0;
-#30000
-#10 sw_i = 16'h0003;
-#10 continue_i = 1;
-#10continue_i = 0;
-#200
-#10 continue_i = 1;
-#10continue_i = 0;
-#200#10 continue_i = 1;
-#10continue_i = 0;
-#200#10 continue_i = 1;
-#10continue_i = 0;
-#200#10 continue_i = 1;
-#10continue_i = 0;
-#200
+
+#200000000
 
 $finish;
     end

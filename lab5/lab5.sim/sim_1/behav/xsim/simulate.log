@@ -1,2 +1,2 @@
 Time resolution is 1 ps
-$finish called at time : 31365 ns : File "D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sim_1/new/test_w1.sv" Line 75
+INFO: xsimkernel Simulation Memory Usage: 16764 KB (Peak: 16764 KB), Simulation CPU Usage: 252906 ms

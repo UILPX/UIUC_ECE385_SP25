@@ -230,8 +230,7 @@ module control (
 		        begin
 		            ld_pc = 1'b1;
 		            addr2mux = 2'b10;
-		            gate_marmux = 1'b1;
-		            pcmux = 2'b01;
+		            pcmux = 2'b10;
 		        end
 		    s_12:
 		        begin
