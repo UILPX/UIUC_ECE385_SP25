@@ -1,0 +1,16 @@
++==================================+==================================+=====================================================================================+
+| Launch Setup Clock               | Launch Hold Clock                | Pin                                                                                 |
++==================================+==================================+=====================================================================================+
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[21].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[23].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[28].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[31].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[22].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[20].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[39].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[29].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[30].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[38].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[37].srl16_i/D |
+| clk_out1_mb_lab7_1_clk_wiz_1_0_1 | clk_out1_mb_lab7_1_clk_wiz_1_0_1 | mb_lab7_1_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[36].srl16_i/D |
++----------------------------------+----------------------------------+-------------------------------------------------------------------------------------+

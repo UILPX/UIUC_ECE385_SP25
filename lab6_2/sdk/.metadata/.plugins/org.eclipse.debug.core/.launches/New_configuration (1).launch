@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdx.aie.tcf.debug.SDXAIESimLaunchConfigurationType">
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="None"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="None"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProgramArguments" value="--pkg-dir=./Work --i=.."/>
+    <booleanAttribute key="org.eclipse.tcf.debug.activeCoretrace" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.build-dir" value=""/>
+    <booleanAttribute key="org.eclipse.tcf.debug.ctftrace" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.debugtype" value="Standalone Application Debug"/>
+    <stringAttribute key="org.eclipse.tcf.debug.device-file" value=""/>
+    <booleanAttribute key="org.eclipse.tcf.debug.enabledumpstate" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.enabletracelog" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.eventtrace" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.gminitfile" value=""/>
+    <stringAttribute key="org.eclipse.tcf.debug.input-dir" value=".."/>
+    <intAttribute key="org.eclipse.tcf.debug.maxcycles" value="0"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.onlinetrace" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.output-dir" value=""/>
+    <stringAttribute key="org.eclipse.tcf.debug.pkg-dir" value="./Work"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.profiletrace" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.selectedactiveCoretrace" value=""/>
+    <stringAttribute key="org.eclipse.tcf.debug.simulator-server" value="localhost"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.vcd" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.vcd.filename" value="foo"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.wdbtrace" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.work-dir" value=""/>
+    <booleanAttribute key="org.eclipse.tcf.debug.xpetrace" value="false"/>
+</launchConfiguration>

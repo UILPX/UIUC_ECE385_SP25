@@ -1,0 +1,44 @@
+/* gpu_axi_lite.c
+ *
+ * Host side driver for the one scan line at a time GPU.
+ * Matches the register map and bit fields documented in gpu_axi_lite.h
+ *
+ *  REG1  (0x00)  ¨C packed  y  u0 u1 v0 v1
+ *  REG2  (0x04)  ¨C packed  x0 x1 z0 z1
+ *  CTRL  (0x08)  ¨C bit0  RUN         (CPU ¡ú GPU, pulse, data[60])
+ *                  bit1  FRAME_DONE  (CPU ¡ú GPU, pulse, data[61])
+ *                  bit31 DONE        (GPU ¡ú CPU, level, data[63])
+ */
+
+#include "gpu_axi_lite.h"
+#include "xil_io.h"
+
+/* optional soft reset hook */
+void gpu_init(void)
+{
+    /* If your HDL exposes a reset bit, assert it here */
+    /* Xil_Out32(GPU_CTRL, GPU_CTRL_RST); */
+}
+
+/* wait until GPU asserts DONE=1 */
+void gpu_wait_ready(void)
+{
+    while ((Xil_In32(GPU_CTRL) & GPU_CTRL_DONE_MASK) == 0u)
+        ;       /* busy wait; worst case one scan line */
+}
+
+/* send one packed scan line and pulse RUN (data[60]) */
+void gpu_send_scanline(uint32_t reg1, uint32_t reg2)
+{
+    gpu_wait_ready();                 /* 1. ensure idle          */
+    Xil_Out32(GPU_REG1, reg1);        /* 2. payload low word     */
+    Xil_Out32(GPU_REG2, reg2);        /* 3. payload high word    */
+    Xil_Out32(GPU_CTRL, GPU_CTRL_RUN);/* 4. pulse RUN            */
+}
+
+/* notify GPU that the frame is complete (pulse FRAME_DONE) */
+void gpu_frame_done(void)
+{
+    gpu_wait_ready();
+    Xil_Out32(GPU_CTRL, GPU_CTRL_FRAME_DONE);
+}

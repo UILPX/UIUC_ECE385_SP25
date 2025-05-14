@@ -1,0 +1,638 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Mar 27 14:42:48 2025
+# Process ID: 4848
+# Current directory: D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1
+# Command line: vivado.exe -log mb_usb_hdmi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_usb_hdmi_top.tcl
+# Log file: D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/mb_usb_hdmi_top.vds
+# Journal file: D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1\vivado.jou
+# Running On: Server, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 29953 MB
+#-----------------------------------------------------------
+source mb_usb_hdmi_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/School/UIUC_ECE385_SP25/lab6_2/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/utils_1/imports/synth_1/mb_intro_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/utils_1/imports/synth_1/mb_intro_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mb_usb_hdmi_top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9608
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1217.352 ; gain = 409.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mb_block' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_1_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UT2LJ' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UT2LJ' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1VI1NO' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VI1NO' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1SCR8U8' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1SCR8U8' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_2FAMHT' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_2FAMHT' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_block_xbar_0' has 40 connections declared, but only 38 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/mb_block_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_block_axi_timer_0_0' has 26 connections declared, but only 23 given [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xlconcat_0_1' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_1/synth/mb_block_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_1' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_1/synth/mb_block_xlconcat_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:97]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/.Xil/Vivado-4848-Server/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ball' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/ball.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/ball.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:14]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.723 ; gain = 513.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.723 ; gain = 513.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.723 ; gain = 513.562
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1321.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block/microblaze_0'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block/microblaze_0'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block/microblaze_0_axi_intc'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block/microblaze_0_axi_intc'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block/mdm_1'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block/mdm_1'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block/clk_wiz_1'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block/clk_wiz_1'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block/axi_uartlite_0'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block/axi_uartlite_0'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block/gpio_usb_rst'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block/gpio_usb_rst'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_1_0/mb_block_axi_gpio_1_0/mb_block_axi_gpio_1_0_in_context.xdc] for cell 'mb_block/gpio_usb_int'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_1_0/mb_block_axi_gpio_1_0/mb_block_axi_gpio_1_0_in_context.xdc] for cell 'mb_block/gpio_usb_int'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1_in_context.xdc] for cell 'mb_block/gpio_usb_keycode'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1_in_context.xdc] for cell 'mb_block/gpio_usb_keycode'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_in_context.xdc] for cell 'mb_block/timer_usb_axi'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_in_context.xdc] for cell 'mb_block/timer_usb_axi'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block/spi_usb'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block/spi_usb'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+WARNING: [Constraints 18-619] A clock with name 'Clk' already exists, overwriting the previous clock with the same name. [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
+New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:1]
+Previous: create_clock -period 10.000 [get_ports Clk], [d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1388.801 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  d:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/gpio_usb_rst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/gpio_usb_int. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/gpio_usb_keycode. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/timer_usb_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/spi_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 8     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 10    
+	   5 Input   10 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: Generating DSP color_instance/Red3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red3.
+WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 1
+WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mb_usb_hdmi_top | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'Clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1388.809 ; gain = 580.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1393.480 ; gain = 585.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1393.480 ; gain = 585.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mb_usb_hdmi_top | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mb_usb_hdmi_top | PCIN>>17+A*B | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |mb_block_xbar_0                  |         1|
+|2     |mb_block_axi_uartlite_0_0        |         1|
+|3     |mb_block_clk_wiz_1_0             |         1|
+|4     |mb_block_axi_gpio_1_0            |         1|
+|5     |mb_block_axi_gpio_0_1            |         1|
+|6     |mb_block_axi_gpio_0_0            |         1|
+|7     |mb_block_mdm_1_0                 |         1|
+|8     |mb_block_microblaze_0_0          |         1|
+|9     |mb_block_microblaze_0_axi_intc_0 |         1|
+|10    |mb_block_rst_clk_wiz_1_100M_0    |         1|
+|11    |mb_block_axi_quad_spi_0_0        |         1|
+|12    |mb_block_axi_timer_0_0           |         1|
+|13    |mb_block_dlmb_bram_if_cntlr_0    |         1|
+|14    |mb_block_dlmb_v10_0              |         1|
+|15    |mb_block_ilmb_bram_if_cntlr_0    |         1|
+|16    |mb_block_ilmb_v10_0              |         1|
+|17    |mb_block_lmb_bram_0              |         1|
+|18    |clk_wiz_0                        |         1|
+|19    |hdmi_tx_0                        |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |clk_wiz                        |     1|
+|2     |hdmi_tx                        |     1|
+|3     |mb_block_axi_gpio_0            |     2|
+|5     |mb_block_axi_gpio_1            |     1|
+|6     |mb_block_axi_quad_spi_0        |     1|
+|7     |mb_block_axi_timer_0           |     1|
+|8     |mb_block_axi_uartlite_0        |     1|
+|9     |mb_block_clk_wiz_1             |     1|
+|10    |mb_block_dlmb_bram_if_cntlr    |     1|
+|11    |mb_block_dlmb_v10              |     1|
+|12    |mb_block_ilmb_bram_if_cntlr    |     1|
+|13    |mb_block_ilmb_v10              |     1|
+|14    |mb_block_lmb_bram              |     1|
+|15    |mb_block_mdm_1                 |     1|
+|16    |mb_block_microblaze_0          |     1|
+|17    |mb_block_microblaze_0_axi_intc |     1|
+|18    |mb_block_rst_clk_wiz_1_100M    |     1|
+|19    |mb_block_xbar                  |     1|
+|20    |BUFG                           |     1|
+|21    |CARRY4                         |    37|
+|22    |DSP48E1                        |     6|
+|23    |LUT1                           |     3|
+|24    |LUT2                           |   111|
+|25    |LUT3                           |    10|
+|26    |LUT4                           |    37|
+|27    |LUT5                           |    46|
+|28    |LUT6                           |    82|
+|29    |FDCE                           |    22|
+|30    |FDRE                           |    51|
+|31    |FDSE                           |     6|
+|32    |IBUF                           |     4|
+|33    |OBUF                           |    29|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1395.113 ; gain = 586.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.113 ; gain = 519.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1395.113 ; gain = 586.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1407.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1410.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8a9c3ccc
+INFO: [Common 17-83] Releasing license: Synthesis
+110 Infos, 132 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1410.840 ; gain = 977.898
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab6_2/lab6_2.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 14:43:28 2025...

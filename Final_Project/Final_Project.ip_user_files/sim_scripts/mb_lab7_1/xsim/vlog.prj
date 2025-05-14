@@ -1,0 +1,16 @@
+verilog xil_defaultlib --include "../../../../Final_Project.gen/sources_1/bd/mb_lab7_1/ipshared/ec67/hdl" \
+"../../../bd/mb_lab7_1/ip/mb_lab7_1_lmb_bram_0/sim/mb_lab7_1_lmb_bram_0.v" \
+"../../../bd/mb_lab7_1/ip/mb_lab7_1_xbar_0/sim/mb_lab7_1_xbar_0.v" \
+"../../../bd/mb_lab7_1/ip/mb_lab7_1_xlconcat_0_0/sim/mb_lab7_1_xlconcat_0_0.v" \
+
+sv xil_defaultlib --include "../../../../Final_Project.gen/sources_1/bd/mb_lab7_1/ipshared/ec67/hdl" \
+"../../../bd/mb_lab7_1/ipshared/41b3/src/hdmi_text_controller_v1_0_AXI.sv" \
+"../../../bd/mb_lab7_1/ipshared/41b3/src/hdmi_text_controller_v1_0.sv" \
+"../../../bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/sim/mb_lab7_1_hdmi_text_controller_0_0.sv" \
+
+verilog xil_defaultlib --include "../../../../Final_Project.gen/sources_1/bd/mb_lab7_1/ipshared/ec67/hdl" \
+"../../../bd/mb_lab7_1/sim/mb_lab7_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,7 @@
+
+#pragma once
+#include <xtmrctr.h>
+#include <stdint.h>
+
+void stats_scanline_sent(void);
+void stats_frame_done(void);

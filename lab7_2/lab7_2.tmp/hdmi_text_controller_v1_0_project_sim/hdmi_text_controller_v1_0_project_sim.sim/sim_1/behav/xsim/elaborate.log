@@ -1,0 +1,45 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:87]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:101]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'web' [d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/hdl/hdmi_text_controller_v1_0_AXI.sv:227]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_output_stage(...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_5.blk_mem_gen_v8_4_5(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module xil_defaultlib.font_rom
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav

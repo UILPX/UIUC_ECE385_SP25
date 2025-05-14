@@ -1,0 +1,48 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.34572",
+   "Default View_TopLeft":"988,85",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port uart_rtl_0 -pg 1 -lvl 4 -x 1600 -y -200 -defaultsOSRD
+preplace port HDMI_0 -pg 1 -lvl 4 -x 1600 -y 280 -defaultsOSRD
+preplace port port-id_reset_rtl_0 -pg 1 -lvl 0 -x -20 -y -230 -defaultsOSRD
+preplace port port-id_clk_100MHz -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -x 510 -y -130 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 2 -x 1000 -y -170 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 3 -x 1390 -y 80 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 2 -x 1000 -y 210 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -x 510 -y 170 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 510 -y 10 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 1000 -y 20 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 3 -x 1390 -y -190 -defaultsOSRD
+preplace inst hdmi_text_controller_0 -pg 1 -lvl 3 -x 1390 -y 320 -defaultsOSRD
+preplace netloc axi_uartlite_0_interrupt 1 1 3 800 430 N 430 1570
+preplace netloc clk_100MHz_1 1 0 1 N 20
+preplace netloc clk_wiz_1_locked 1 1 1 760 20n
+preplace netloc mdm_1_debug_sys_rst 1 0 2 20 80 770
+preplace netloc microblaze_0_Clk 1 0 3 10 -240 780 -260 1200
+preplace netloc reset_rtl_0_1 1 0 2 NJ -230 790J
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 810 -80 1170
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 3 10 260 770J 330 1180
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 2 810 340 1210
+preplace netloc axi_uartlite_0_UART 1 3 1 NJ -200
+preplace netloc hdmi_text_controller_0_HDMI 1 3 1 N 280
+preplace netloc microblaze_0_axi_dp 1 1 2 760J -90 1190J
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 2 1210J -270 1560
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 2 2 1220 410 1540
+preplace netloc microblaze_0_debug 1 0 2 20 -220 750J
+preplace netloc microblaze_0_dlmb_1 1 1 1 760 -200n
+preplace netloc microblaze_0_ilmb_1 1 1 1 770 -180n
+preplace netloc microblaze_0_intc_axi 1 1 3 790 420 N 420 1550
+preplace netloc microblaze_0_interrupt 1 0 3 0 320 NJ 320 1170J
+levelinfo -pg 1 -20 510 1000 1390 1600
+pagesize -pg 1 -db -bbox -sgen -150 -420 1710 460
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"5",
+   "da_mb_cnt":"1"
+}

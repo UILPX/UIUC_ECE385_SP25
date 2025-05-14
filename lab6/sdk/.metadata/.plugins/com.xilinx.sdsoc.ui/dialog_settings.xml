@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_intro_top\export\mb_intro_top"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_intro_top\export\mb_intro_top"/>
+	<item key="sdx.custom.platform.repository.locations" value="D:\School\UIUC_ECE385_SP25\lab6\sdk\mb_intro_top\export\mb_intro_top;D:\School\UIUC_ECE385_SP25\lab6_2\sdk\mb_usb_hdmi"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\School\UIUC_ECE385_SP25\lab6_2\sdk\mb_usb_hdmi"/>
 </section>

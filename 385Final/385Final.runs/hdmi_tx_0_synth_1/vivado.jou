@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Apr 17 19:31:39 2025
+# Process ID: 327272
+# Current directory: D:/School/UIUC_ECE385_SP25/385Final/385Final.runs/hdmi_tx_0_synth_1
+# Command line: vivado.exe -log hdmi_tx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_tx_0.tcl
+# Log file: D:/School/UIUC_ECE385_SP25/385Final/385Final.runs/hdmi_tx_0_synth_1/hdmi_tx_0.vds
+# Journal file: D:/School/UIUC_ECE385_SP25/385Final/385Final.runs/hdmi_tx_0_synth_1\vivado.jou
+# Running On: Server, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 29953 MB
+#-----------------------------------------------------------
+source hdmi_tx_0.tcl -notrace

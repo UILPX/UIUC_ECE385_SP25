@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Apr  3 12:12:56 2025
+# Process ID: 26688
+# Current directory: D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1
+# Command line: vivado.exe -log mb_lab7_1_hdmi_text_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_lab7_1_hdmi_text_controller_0_0.tcl
+# Log file: D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/mb_lab7_1_hdmi_text_controller_0_0.vds
+# Journal file: D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1\vivado.jou
+# Running On: Server, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 29953 MB
+#-----------------------------------------------------------
+source mb_lab7_1_hdmi_text_controller_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/School/UIUC_ECE385_SP25/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/School/UIUC_ECE385_SP25/lab6_2/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_lab7_1_hdmi_text_controller_0_0
+Command: synth_design -top mb_lab7_1_hdmi_text_controller_0_0 -part xc7s50csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 63292
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'slv_regs' is used before its declaration [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:110]
+WARNING: [Synth 8-6901] identifier 'slv_regs' is used before its declaration [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:111]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:148]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1186.859 ; gain = 408.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_lab7_1_hdmi_text_controller_0_0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/synth/mb_lab7_1_hdmi_text_controller_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
+WARNING: [Synth 8-324] index 601 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 602 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 603 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 604 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 605 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 606 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 607 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 608 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 609 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 610 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 611 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 612 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 613 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 614 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 615 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 616 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 617 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 618 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 619 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 620 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 621 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 622 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 623 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 624 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 625 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 626 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 627 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 628 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 629 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 630 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 631 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 632 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 633 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 634 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 635 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 636 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 637 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 638 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 639 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 640 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 641 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 642 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 643 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 644 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 645 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 646 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 647 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 648 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 649 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 650 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 651 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 652 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 653 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 654 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 655 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 656 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 657 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 658 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 659 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 660 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 661 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 662 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 663 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 664 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 665 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 666 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 667 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 668 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 669 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 670 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 671 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 672 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 673 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 674 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 675 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 676 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 677 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 678 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 679 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 680 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 681 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 682 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 683 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 684 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 685 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 686 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 687 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 688 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 689 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 690 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 691 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 692 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 693 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 694 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 695 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 696 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 697 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 698 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 699 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+WARNING: [Synth 8-324] index 700 out of range [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:264]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/font_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/font_rom.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'displaylogic' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/logic.sv:23]
+INFO: [Synth 8-226] default block is never used [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/logic.sv:48]
+INFO: [Synth 8-6155] done synthesizing module 'displaylogic' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/logic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/src/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0.sv:127]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0.sv:127]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'srldelay' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'encode' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
+INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'mb_lab7_1_hdmi_text_controller_0_0' (0#1) [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/synth/mb_lab7_1_hdmi_text_controller_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:148]
+WARNING: [Synth 8-7129] Port drawX[9] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drawX[8] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drawX[7] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drawX[6] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drawX[5] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[31] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[30] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[29] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[28] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[27] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[26] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[25] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port colorinfo[0] in module displaylogic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.432 . Memory (MB): peak = 1842.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
+Finished Parsing XDC File [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'inst/clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_lab7_1_hdmi_text_controller_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_lab7_1_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_lab7_1_hdmi_text_controller_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_lab7_1_hdmi_text_controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1842.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1842.660 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz/inst. (constraint file  D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vga_to_hdmi. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   5 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 43    
++---Registers : 
+	               32 Bit    Registers := 602   
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 15    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 601   
+	   2 Input   10 Bit        Muxes := 6     
+	  22 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2417  
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 12    
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module mb_lab7_1_hdmi_text_controller_0_0 is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'axi_rresp_reg[0]' (FDRE) to 'axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'axi_bresp_reg[0]' (FDRE) to 'axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:11 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------------------------+------------+---------------+----------------+
+|Module Name                        | RTL Object | Depth x Width | Implemented As | 
++-----------------------------------+------------+---------------+----------------+
+|font_rom                           | ROM        | 2048x8        | LUT            | 
+|mb_lab7_1_hdmi_text_controller_0_0 | font/ROM   | 2048x8        | LUT            | 
++-----------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_wiz/inst/clk_in1' to pin 'inst/ibuf_clk/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:28 ; elapsed = 00:03:46 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+critical warning: create_clock attempting to set clock on an unknown port/pin command: "create_clock -period 10.000000 -waveform {0.000000 5.000000} -name inst\/clk_wiz\/inst\/clk_in1 [get_xlnx_outside_genome_inst_pin 16 0]"
+critical warning: create_clock attempting to set clock on an unknown port/pin command: "create_clock -period 10.000000 -waveform {0.000000 5.000000} -name inst\/clk_wiz\/inst\/clk_in1 [get_xlnx_outside_genome_inst_pin 16 0]"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:51 ; elapsed = 00:04:47 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:58 ; elapsed = 00:04:54 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:58 ; elapsed = 00:04:54 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:58 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:58 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:04 ; elapsed = 00:05:00 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:04 ; elapsed = 00:05:01 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hdmi_tx_0   | inst/encg/c0_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |     4|
+|3     |LUT1       |     2|
+|4     |LUT2       |    23|
+|5     |LUT3       |  1682|
+|6     |LUT4       |    91|
+|7     |LUT5       |  5053|
+|8     |LUT6       | 11435|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |  5008|
+|11    |MUXF8      |  2504|
+|12    |OSERDESE2  |     8|
+|14    |SRL16E     |    39|
+|15    |FDCE       |   206|
+|16    |FDRE       | 19595|
+|17    |FDSE       |     1|
+|18    |IBUF       |     2|
+|19    |OBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:04 ; elapsed = 00:05:01 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:46 ; elapsed = 00:04:55 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+Synthesis Optimization Complete : Time (s): cpu = 00:04:05 ; elapsed = 00:05:02 . Memory (MB): peak = 1842.660 ; gain = 1063.812
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.389 . Memory (MB): peak = 1842.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7521 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'mb_lab7_1_hdmi_text_controller_0_0' is not ideal for floorplanning, since the cellview 'hdmi_text_controller_v1_0_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, inst/clk_wiz/inst/clkin1_ibufg, from the path connected to top-level port: axi_aclk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1842.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b720ac19
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:12 ; elapsed = 00:05:09 . Memory (MB): peak = 1842.660 ; gain = 1437.875
+INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/mb_lab7_1_hdmi_text_controller_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_lab7_1_hdmi_text_controller_0_0, cache-ID = 6429dd58c71223d5
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.runs/mb_lab7_1_hdmi_text_controller_0_0_synth_1/mb_lab7_1_hdmi_text_controller_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_lab7_1_hdmi_text_controller_0_0_utilization_synth.rpt -pb mb_lab7_1_hdmi_text_controller_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 12:18:23 2025...

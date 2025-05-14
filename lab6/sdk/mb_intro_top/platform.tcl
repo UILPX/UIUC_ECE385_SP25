@@ -34,3 +34,5 @@ platform config -updatehw {D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa}
 platform generate -domains 
 platform config -updatehw {D:/School/UIUC_ECE385_SP25/lab6/mb_intro_top.xsa}
 platform generate -domains 
+platform active {mb_intro_top}
+platform write

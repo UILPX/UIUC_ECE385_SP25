@@ -1,0 +1,292 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Apr  3 12:12:40 2025
+| Host         : Server running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_lab7_1_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Apr  3 11:24:05 2025
+| Host         : Server running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_lab7_1_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Apr  3 10:36:21 2025
+| Host         : Server running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_lab7_1_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'mb_lab7_1_hdmi_text_controller_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'axi_araddr' width 13 differs from original width 12
+
+-Upgraded port 'axi_awaddr' width 13 differs from original width 12
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_AXI_ADDR_WIDTH' from '13' to '12' has been ignored for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 -user_name mb_lab7_1_hdmi_text_controller_0_0
+set_property -dict "\
+  CONFIG.AXI.ADDR_WIDTH {12} \
+  CONFIG.AXI.ARUSER_WIDTH {0} \
+  CONFIG.AXI.AWUSER_WIDTH {0} \
+  CONFIG.AXI.BUSER_WIDTH {0} \
+  CONFIG.AXI.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.AXI.DATA_WIDTH {32} \
+  CONFIG.AXI.FREQ_HZ {100000000} \
+  CONFIG.AXI.HAS_BRESP {1} \
+  CONFIG.AXI.HAS_BURST {0} \
+  CONFIG.AXI.HAS_CACHE {0} \
+  CONFIG.AXI.HAS_LOCK {0} \
+  CONFIG.AXI.HAS_PROT {1} \
+  CONFIG.AXI.HAS_QOS {0} \
+  CONFIG.AXI.HAS_REGION {0} \
+  CONFIG.AXI.HAS_RRESP {1} \
+  CONFIG.AXI.HAS_WSTRB {1} \
+  CONFIG.AXI.ID_WIDTH {0} \
+  CONFIG.AXI.INSERT_VIP {0} \
+  CONFIG.AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.AXI.NUM_READ_OUTSTANDING {2} \
+  CONFIG.AXI.NUM_READ_THREADS {1} \
+  CONFIG.AXI.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.AXI.PHASE {0.0} \
+  CONFIG.AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.RUSER_WIDTH {0} \
+  CONFIG.AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI.WIZ_NUM_REG {4} \
+  CONFIG.AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.WUSER_WIDTH {0} \
+  CONFIG.AXI_CLK.ASSOCIATED_BUSIF {AXI} \
+  CONFIG.AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_CLK.ASSOCIATED_RESET {axi_aresetn} \
+  CONFIG.AXI_CLK.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_CLK.PHASE {0.0} \
+  CONFIG.AXI_RST.INSERT_VIP {0} \
+  CONFIG.AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_AXI_ADDR_WIDTH {12} \
+  CONFIG.C_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_AXI_DATA_WIDTH {32} \
+  CONFIG.C_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {mb_lab7_1_hdmi_text_controller_0_0} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_n.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_n.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_n.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_n.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_n.PHASE {0.0} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_p.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_p.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_p.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_p.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_p.PHASE {0.0} " [get_ips mb_lab7_1_hdmi_text_controller_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Apr  3 00:15:19 2025
+| Host         : Server running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_lab7_1_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Apr  2 21:14:22 2025
+| Host         : Server running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_lab7_1_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'mb_lab7_1_hdmi_text_controller_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'axi_araddr' width 12 differs from original width 4
+
+-Upgraded port 'axi_awaddr' width 12 differs from original width 4
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_AXI_ADDR_WIDTH' from '12' to '4' has been ignored for IP 'mb_lab7_1_hdmi_text_controller_0_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 -user_name mb_lab7_1_hdmi_text_controller_0_0
+set_property -dict "\
+  CONFIG.AXI.ADDR_WIDTH {4} \
+  CONFIG.AXI.ARUSER_WIDTH {0} \
+  CONFIG.AXI.AWUSER_WIDTH {0} \
+  CONFIG.AXI.BUSER_WIDTH {0} \
+  CONFIG.AXI.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.AXI.DATA_WIDTH {32} \
+  CONFIG.AXI.FREQ_HZ {100000000} \
+  CONFIG.AXI.HAS_BRESP {1} \
+  CONFIG.AXI.HAS_BURST {0} \
+  CONFIG.AXI.HAS_CACHE {0} \
+  CONFIG.AXI.HAS_LOCK {0} \
+  CONFIG.AXI.HAS_PROT {1} \
+  CONFIG.AXI.HAS_QOS {0} \
+  CONFIG.AXI.HAS_REGION {0} \
+  CONFIG.AXI.HAS_RRESP {1} \
+  CONFIG.AXI.HAS_WSTRB {1} \
+  CONFIG.AXI.ID_WIDTH {0} \
+  CONFIG.AXI.INSERT_VIP {0} \
+  CONFIG.AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.AXI.NUM_READ_OUTSTANDING {2} \
+  CONFIG.AXI.NUM_READ_THREADS {1} \
+  CONFIG.AXI.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.AXI.PHASE {0.0} \
+  CONFIG.AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.RUSER_WIDTH {0} \
+  CONFIG.AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI.WIZ_NUM_REG {4} \
+  CONFIG.AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.WUSER_WIDTH {0} \
+  CONFIG.AXI_CLK.ASSOCIATED_BUSIF {AXI} \
+  CONFIG.AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_CLK.ASSOCIATED_RESET {axi_aresetn} \
+  CONFIG.AXI_CLK.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_CLK.PHASE {0.0} \
+  CONFIG.AXI_RST.INSERT_VIP {0} \
+  CONFIG.AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_AXI_ADDR_WIDTH {4} \
+  CONFIG.C_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_AXI_DATA_WIDTH {32} \
+  CONFIG.C_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {mb_lab7_1_hdmi_text_controller_0_0} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_n.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_n.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_n.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_n.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_n.PHASE {0.0} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_p.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_p.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_p.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_p.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_p.PHASE {0.0} " [get_ips mb_lab7_1_hdmi_text_controller_0_0]
+
+

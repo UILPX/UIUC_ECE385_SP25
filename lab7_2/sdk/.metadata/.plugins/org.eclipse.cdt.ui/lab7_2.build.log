@@ -1,0 +1,58 @@
+16:17:06 **** Build of configuration Debug for project lab7_2 ****
+make all 
+'Building file: ../src/hdmi_text_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -ID:/School/UIUC_ECE385_SP25/lab7_2/sdk/mb_lab7_1_wrapper/export/mb_lab7_1_wrapper/sw/mb_lab7_1_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
+In file included from ../src/hdmi_text_controller.h:8,
+                 from ../src/hdmi_text_controller.c:4:
+D:/School/UIUC_ECE385_SP25/lab7_2/sdk/mb_lab7_1_wrapper/export/mb_lab7_1_wrapper/sw/mb_lab7_1_wrapper/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct TEXT_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:28:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   28 | static volatile struct TEXT_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_text_controller.c:107:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  107 | hdmiTestWeek2()
+      | ^~~~~~~~~~~~~
+../src/hdmi_text_controller.c:107:1: warning: conflicting types for 'hdmiTestWeek2'
+In file included from ../src/hdmi_text_controller.c:4:
+../src/hdmi_text_controller.h:117:6: note: previous declaration of 'hdmiTestWeek2' with type 'void()'
+  117 | void hdmiTestWeek2(); //call this for your Week 2 demo
+      |      ^~~~~~~~~~~~~
+../src/hdmi_text_controller.c: In function 'hdmiTestWeek2':
+../src/hdmi_text_controller.c:110:34: warning: unused variable 'readsum' [-Wunused-variable]
+  110 |         uint32_t checksum[ROWS], readsum[ROWS];
+      |                                  ^~~~~~~
+../src/hdmi_text_controller.c:110:18: warning: unused variable 'checksum' [-Wunused-variable]
+  110 |         uint32_t checksum[ROWS], readsum[ROWS];
+      |                  ^~~~~~~~
+'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/School/UIUC_ECE385_SP25/lab7_2/sdk/mb_lab7_1_wrapper/export/mb_lab7_1_wrapper/sw/mb_lab7_1_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:5: warning: implicit declaration of function 'hdmiTestWeek2' [-Wimplicit-function-declaration]
+   56 |     hdmiTestWeek2();
+      |     ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/School/UIUC_ECE385_SP25/lab7_2/sdk/mb_lab7_1_wrapper/export/mb_lab7_1_wrapper/sw/mb_lab7_1_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lab7_2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/School/UIUC_ECE385_SP25/lab7_2/sdk/mb_lab7_1_wrapper/export/mb_lab7_1_wrapper/sw/mb_lab7_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab7_2.elf"  ./src/hdmi_text_controller.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab7_2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab7_2.elf  |tee "lab7_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  86760	   2096	   3168	  92024	  16778	lab7_2.elf
+'Finished building: lab7_2.elf.size'
+' '
+
+16:17:07 Build Finished (took 842ms)
+

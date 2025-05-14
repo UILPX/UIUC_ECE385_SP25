@@ -1,0 +1,7 @@
+/* —— stats.h ——————————————————————————————— */
+#pragma once
+#include "xtime_l.h"
+#include <stdint.h>
+
+void stats_scanline_sent(void);  /* 在 scanline_out 调 */
+void stats_frame_done(void);     /* 在 gpu_frame_done 调 */

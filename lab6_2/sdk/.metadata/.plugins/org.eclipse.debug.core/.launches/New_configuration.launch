@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.tcf.debug.LaunchConfigurationType">
+    <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value=""/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtMain" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseTerminal" value="true"/>
+</launchConfiguration>

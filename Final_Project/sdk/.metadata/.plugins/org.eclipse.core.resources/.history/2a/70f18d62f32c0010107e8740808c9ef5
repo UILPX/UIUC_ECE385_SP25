@@ -1,0 +1,36 @@
+#include "gpu_axi_lite.h"
+#include "xil_io.h"
+#include <unistd.h>
+
+void gpu_init(void) { /* nothing yet */ }
+
+void gpu_wait_ready(void)
+{
+    u32 reg_val;             // 32-bit 无符号
+
+    do {
+        reg_val = Xil_In32(GPU_DATA_CTRL);               // 读寄存器
+        xil_printf("GPU_DATA_CTRL = 0x%08lx\r\n", reg_val);
+        /* 可选：加一点点延时，避免打印过快刷屏
+           usleep(1000);   // 1 ms，需 #include "sleep.h"
+        */
+    } while ( (reg_val & (GPU_CTL_DONE_MASK << GPU_CTL_NIBBLE_SHIFT)) == 0 );
+}
+
+void gpu_send_scanline(uint32_t lo, uint32_t hi_data)
+{
+    gpu_wait_ready();                                   /* GPU idle      */
+    Xil_Out32(GPU_DATA_HI, hi_data);                         /* data bits 31:0*/
+    //xil_printf("%x",hi_data);
+    Xil_Out32(GPU_DATA_LO, lo);                         /* data+RUN      */
+    Xil_Out32(GPU_DATA_CTRL,GPU_CTL_RUN);
+    //xil_printf("%x\r\n",LO);
+    //usleep(5000);
+}
+
+void gpu_frame_done(void)
+{
+    gpu_wait_ready();
+    Xil_Out32(GPU_DATA_CTRL, GPU_CTL_FRAME_DONE);
+    //xil_printf("----\r\n");
+}

@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_clk_wiz_1_0/mb_lab7_1_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_clk_wiz_1_0/mb_lab7_1_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_xbar_0/sim/mb_lab7_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_lmb_bram_0/sim/mb_lab7_1_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/src/VGA_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/src/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+WARNING: [VRFC 10-3380] identifier 'slv_regs' is used before its declaration [D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:110]
+WARNING: [VRFC 10-3380] identifier 'slv_regs' is used before its declaration [D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0_AXI.sv:111]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/src/logic.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module displaylogic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ipshared/95d4/hdl/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_hdmi_text_controller_0_0/sim/mb_lab7_1_hdmi_text_controller_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_hdmi_text_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/sim/mb_lab7_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_SQ0BUR
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_1CXZUJF
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_5BOF02
+INFO: [VRFC 10-311] analyzing module mb_lab7_1
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module microblaze_0_local_memory_imp_6CMKOB
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1YXZ42N
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.gen/sources_1/bd/mb_lab7_1/hdl/mb_lab7_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_lab7_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_microblaze_0_axi_intc_0/sim/mb_lab7_1_microblaze_0_axi_intc_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_microblaze_0_axi_intc_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_mdm_1_0/sim/mb_lab7_1_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_mdm_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_rst_clk_wiz_1_100M_0/sim/mb_lab7_1_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_rst_clk_wiz_1_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_axi_uartlite_0_0/sim/mb_lab7_1_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_axi_uartlite_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_microblaze_0_0/sim/mb_lab7_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_microblaze_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_dlmb_bram_if_cntlr_0/sim/mb_lab7_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_dlmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_ilmb_bram_if_cntlr_0/sim/mb_lab7_1_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_ilmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_dlmb_v10_0/sim/mb_lab7_1_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_dlmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/School/UIUC_ECE385_SP25/lab7_1/lab7_1.ip_user_files/bd/mb_lab7_1/ip/mb_lab7_1_ilmb_v10_0/sim/mb_lab7_1_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mb_lab7_1_ilmb_v10_0'
