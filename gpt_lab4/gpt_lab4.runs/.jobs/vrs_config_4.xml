@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="impl_1" LaunchDir="D:/School/UIUC_ECE385_SP25/gpt_lab4/gpt_lab4.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
-	<Parameters>
-		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
-		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
-	</Parameters>
-</Runs>
-

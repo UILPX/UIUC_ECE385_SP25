@@ -1,9 +1,0 @@
-Time resolution is 1 ps
-Block Memory Generator module hdmi_text_controller_tb.hdmi_text_controller_v1_0_inst.hdmi_text_controller_v1_0_AXI_inst.bram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
-blk_mem_gen_v8_4_5 collision detected at time: 230000, Instance: hdmi_text_controller_tb.hdmi_text_controller_v1_0_inst.hdmi_text_controller_v1_0_AXI_inst.bram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 0, B ra`d address: 0
-blk_mem_gen_v8_4_5 collision detected at time: 270000, Instance: hdmi_text_controller_tb.hdmi_text_controller_v1_0_inst.hdmi_text_controller_v1_0_AXI_inst.bram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 0, B ra`d address: 0
-blk_mem_gen_v8_4_5 collision detected at time: 310000, Instance: hdmi_text_controller_tb.hdmi_text_controller_v1_0_inst.hdmi_text_controller_v1_0_AXI_inst.bram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 0, B ra`d address: 0
-blk_mem_gen_v8_4_5 collision detected at time: 350000, Instance: hdmi_text_controller_tb.hdmi_text_controller_v1_0_inst.hdmi_text_controller_v1_0_AXI_inst.bram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst , A write address: 0, B ra`d address: 0
-Info: Read back of control register: 001f6000
-Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial264_917  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv Line: 290
-$finish called at time : 192360 ns : File "d:/school/uiuc_ece385_sp25/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" Line 299

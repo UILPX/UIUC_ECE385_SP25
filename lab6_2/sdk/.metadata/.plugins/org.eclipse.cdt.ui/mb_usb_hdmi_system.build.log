@@ -1,6 +1,0 @@
-14:47:20 **** Build of configuration Debug for project mb_usb_hdmi_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
-
-14:47:21 Build Finished (took 87ms)
-
