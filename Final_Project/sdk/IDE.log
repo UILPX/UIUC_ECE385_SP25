@@ -8674,3 +8674,12 @@ con
 ----------------End of Script----------------
 
 19:52:25 INFO  : Disconnected from the channel tcfchan#14.
+09:15:44 DEBUG : Logs will be stored at 'D:/School/UIUC_ECE385_SP25/Final_Project/sdk/IDE.log'.
+09:15:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\School\UIUC_ECE385_SP25\Final_Project\sdk\temp_xsdb_launch_script.tcl
+09:15:48 INFO  : Registering command handlers for Vitis TCF services
+09:15:48 INFO  : Platform repository initialization has completed.
+09:15:50 INFO  : XSCT server has started successfully.
+09:15:54 INFO  : plnx-install-location is set to ''
+09:15:54 INFO  : Successfully done setting XSCT server connection channel  
+09:15:54 INFO  : Successfully done query RDI_DATADIR 
+09:15:54 INFO  : Successfully done setting workspace for the tool. 

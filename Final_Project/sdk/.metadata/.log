@@ -10239,3 +10239,51 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-26: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2025-05-09 19:52:25.624
 !MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-550
+!SESSION 2025-10-31 09:15:19.034 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-10-31 09:15:42.528
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-31 09:15:46.819
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-31 09:15:46.820
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-10-31 09:15:46.820
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:50.289
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-8: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:50.290
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:50.294
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-37
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.641
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-8: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.641
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.641
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-8: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.642
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-37
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.646
+!MESSAGE XSCT Command: [setws D:/School/UIUC_ECE385_SP25/Final_Project/sdk], Thread: Thread-37
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.647
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-8: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-10-31 09:15:54.654
+!MESSAGE XSCT command with result: [setws D:/School/UIUC_ECE385_SP25/Final_Project/sdk], Result: [null, ]. Thread: Thread-37

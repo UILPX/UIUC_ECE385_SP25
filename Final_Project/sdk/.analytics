@@ -679,3 +679,6 @@ timestamp=[2025-05-09 19:52:10], mode=PLATFORM_GENERATION, duration=0:00:12.247,
 timestamp=[2025-05-09 19:52:10], mode=BUILD, duration=0:00:00.207, duration_ms=207, data={name=final_project, configuration=Debug, clean_build=true}
 timestamp=[2025-05-09 19:52:13], mode=BUILD, duration=0:00:02.375, duration_ms=2375, data={name=final_project, configuration=Debug, clean_build=false}
 timestamp=[2025-05-09 19:52:13], mode=BUILD, duration=0:00:00.095, duration_ms=95, data={name=final_project_system, configuration=Debug, clean_build=false}
+timestamp=[2025-10-31 09:15:47], mode=WORKBENCH_START, duration=0:00:07.350, duration_ms=7350, data={}
+timestamp=[2025-10-31 09:15:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.486, duration_ms=486, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,final_project,final_project_system,mb_lab7_1_wrapper}
+timestamp=[2025-10-31 09:15:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.226, duration_ms=226, data={}

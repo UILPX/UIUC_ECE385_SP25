@@ -1,6 +1,0 @@
-0.7
-2020.2
-Oct 14 2022
-05:20:55
-D:/School/UIUC_ECE385_SP25/lab5/lab5.sim/sim_1/synth/func/xsim/test_w1_func_synth.v,1741305626,verilog,,,,ALU;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_5;blk_mem_gen_0_blk_mem_gen_v8_4_5_synth;bus_mux;control;cpu;cpu_to_io;glbl;hex_driver;instantiate_ram;load_reg;load_reg_17;load_reg_18;load_reg_19;load_reg_20;load_reg_21;load_reg_22;load_reg_23;load_reg_24;load_reg_25;load_reg_26;load_reg_27;load_reg__parameterized0;memory;processor_top;regfile;slc3;sync_debounce;sync_debounce_0;sync_debounce_1;sync_flop;sync_flop_10;sync_flop_11;sync_flop_12;sync_flop_13;sync_flop_14;sync_flop_15;sync_flop_16;sync_flop_2;sync_flop_3;sync_flop_4;sync_flop_5;sync_flop_6;sync_flop_7;sync_flop_8;sync_flop_9,,uvm,../../../../../lab5.srcs/sources_1/imports/srcs,,,,,
-D:/School/UIUC_ECE385_SP25/lab5/lab5.srcs/sim_1/new/test_w1.sv,1741304711,systemVerilog,,,,test_w1,,uvm,../../../../../lab5.srcs/sources_1/imports/srcs,,,,,
