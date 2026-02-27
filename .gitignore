@@ -1,0 +1,39 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archives / media dumps
+*.zip
+*.mp4
+
+# Logs / temp
+*.log
+*.jou
+*.pb
+*.wdb
+*.tmp
+*.str
+
+# Build outputs
+*.bit
+*.bin
+*.elf
+
+# Xilinx Vivado / Vitis generated directories
+**/.Xil/
+**/*.cache/
+**/*.gen/
+**/*.hw/
+**/*.ip_user_files/
+**/*.runs/
+**/*.sim/
+**/sdk/**/Debug/
+**/sdk/**/Release/
+**/sdk/**/bsp/
+**/sdk/**/tempdsa/
+
+# Common generated scripts/artifacts
+**/usage_statistics_webtalk.html
+**/webtalk*.xml
